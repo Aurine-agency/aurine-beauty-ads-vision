@@ -4,27 +4,27 @@ const Services = () => {
   const services = [
     {
       icon: Target,
-      title: "Trafiamy do właściwych osób",
+      title: "Dotrzemy do właściwych kobiet",
       description:
-        "Twoje reklamy zobaczy kobieta z Twojego miasta lub okolicy, która szuka usług kosmetycznych. Nie marnujemy pieniędzy na przypadkowe osoby – każda złotówka idzie tam, gdzie powinna.",
+        "Twoje reklamy zobaczą kobiety z Twojego miasta, które naprawdę szukają usług kosmetycznych. Nie wyrzucasz pieniędzy w błoto – każda złotówka pracuje dla Ciebie.",
     },
     {
       icon: TrendingUp,
-      title: "Poprawiamy wyniki na bieżąco",
+      title: "Codziennie usprawniamy kampanię",
       description:
-        "Codziennie sprawdzamy, co działa najlepiej i dostosowujemy kampanię. Testujemy różne podejścia, żeby efekty były jak najlepsze, a koszty jak najniższe.",
+        "Nie uruchamiamy kampanii i nie zostawiamy jej samej sobie. Codziennie sprawdzamy wyniki i poprawiamy to, co trzeba – żeby działało coraz lepiej i kosztowało mniej.",
     },
     {
       icon: Sparkles,
-      title: "Tworzymy reklamy, które działają",
+      title: "Projektujemy reklamy, które przyciągają",
       description:
-        "Projektujemy grafiki i piszemy teksty, które zatrzymają wzrok w feedzie. Proste, estetyczne i napisane tak, żeby przekonać do umówienia wizyty właśnie u Ciebie.",
+        "Tworzym grafiki i teksty, które zatrzymują uwagę – nie generic, wyświechtane szablony. Proste, ładne i napisane tak, żeby kobieta chciała zadzwonić właśnie do Ciebie.",
     },
     {
       icon: Users,
-      title: "Wszystko wiesz na bieżąco",
+      title: "Zawsze wiesz, co się dzieje",
       description:
-        "Co tydzień dostaniesz prosty raport – ile osób zobaczyło reklamy, ile kliknęło, ile zapytało o wizytę i ile to wszystko kosztowało. Zawsze wiesz, co się dzieje.",
+        "Co tydzień dostaniesz prosty raport – bez zbędnych liczb i wykresów, tylko najważniejsze informacje. Ile osób zobaczyło, ile kliknęło, ile zapytało i ile to kosztowało.",
     },
   ];
 
@@ -42,7 +42,7 @@ const Services = () => {
             <span className="text-gradient-pink"> zrobimy</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Zajmujemy się wszystkim – Ty tylko odbierasz telefony od zainteresowanych klientek
+            Zajmujemy się wszystkim, co potrzebne – Ty po prostu przyjmujesz nowe klientki
           </p>
         </div>
 

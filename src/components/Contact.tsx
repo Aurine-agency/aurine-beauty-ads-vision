@@ -10,10 +10,10 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in px-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-              Chcesz więcej <span className="text-gradient-pink">klientek?</span>
+              Porozmawiajmy o <span className="text-gradient-pink">Twoim salonie</span>
             </h2>
             <p className="text-lg sm:text-xl text-white/60">
-              Umów bezpłatną konsultację i sprawdź, jak możemy pomóc Twojemu salonowi
+              Umów bezpłatną rozmowę – bez nacisku, bez zobowiązań. Po prostu szczerze.
             </p>
           </div>
 

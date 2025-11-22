@@ -8,32 +8,32 @@ const FAQ = () => {
     {
       question: "Ile to kosztuje?",
       answer:
-        "Do każdej współpracy podchodzimy indywidualnie. Koszt zależy od Twojego budżetu reklamowego i celów, które chcesz osiągnąć. Nie ma tu sztywnych pakietów - dostosowujemy się do możliwości salonu. Najlepiej po prostu porozmawiać, wtedy wszystko stanie się jasne i ustalimy warunki idealnie dopasowane do Ciebie.",
+        "Każda współpraca to inna historia, inne potrzeby, inny budżet. Dlatego nie mamy sztywnych pakietów – dostosowujemy się do Twojej sytuacji. Najlepiej po prostu porozmawiać, wtedy wszystko stanie się jasne i ustalimy warunki, które będą dobre dla Ciebie.",
     },
     {
-      question: "Jak długo trzeba czekać na efekty?",
+      question: "Jak długo czekać na pierwsze efekty?",
       answer:
-        "Pierwsze zapytania od zainteresowanych klientek przychodzą już w pierwszym tygodniu. Pełny obraz sytuacji otrzymujesz po około miesiącu - wtedy widać wyraźnie, co działa najlepiej i możemy dalej to optymalizować.",
+        "Pierwsze telefony od zainteresowanych klientek zazwyczaj przychodzą już w pierwszym tygodniu. Po miesiącu masz pełny obraz tego, jak idzie i co możemy jeszcze poprawić, żeby działało jeszcze lepiej.",
     },
     {
-      question: "Czy to działa w małych miastach?",
+      question: "Czy to ma sens w małym mieście?",
       answer:
-        "Działa świetnie! Facebook pozwala nam precyzyjnie dotrzeć do osób z Twojego miasta i okolic. Często w mniejszych miejscowościach jest łatwiej osiągnąć sukces, ponieważ konkurencja nie prowadzi reklam lub robi je nieskutecznie.",
+        "Tak! Facebook pozwala dotrzeć dokładnie do kobiet z Twojego miasta, które szukają usług kosmetycznych. W małych miejscowościach często działa to nawet lepiej niż w dużych miastach, bo konkurencja albo nie prowadzi reklam, albo robi je źle.",
     },
     {
-      question: "Czy muszę dać dostęp do mojego Facebooka?",
+      question: "Muszę dać Wam dostęp do mojego Facebooka?",
       answer:
-        "Tak, jednak nie martw się - dostęp będzie tylko do części reklamowej (Business Manager). Nie mamy wglądu w Twój prywatny profil ani wiadomości. Wszystko jest bezpieczne i zgodne z zasadami Facebooka.",
+        "Tak, ale spokojnie – dostęp tylko do części reklamowej (Business Manager). Nie widzimy Twojego prywatnego profilu ani wiadomości. Wszystko zgodne z zasadami i bezpieczne.",
     },
     {
-      question: "Co jeśli nie będę zadowolona?",
+      question: "Co jak mi się nie spodoba?",
       answer:
-        "Rozliczamy się miesięcznie, bez długoterminowych zobowiązań. Jeśli cokolwiek Ci nie pasuje, możemy zakończyć współpracę. Zwykle jednak po pierwszym miesiącu klientki są zadowolone i zostają z nami znacznie dłużej :)",
+        "Możesz odejść w każdej chwili – rozliczamy się co miesiąc, bez wiązania. Jeśli coś Ci nie pasuje, możemy po prostu zakończyć. Ale zwykle po pierwszym miesiącu właścicielki zostają, bo widzą, że działa :)",
     },
     {
-      question: "Czy potrzebuję profesjonalnych zdjęć?",
+      question: "Nie mam profesjonalnych zdjęć, co teraz?",
       answer:
-        "Chętnie Ci w tym pomożemy! Możemy wykorzystać zdjęcia, które już masz, lub podpowiemy jak wykonać dobre zdjęcia telefonem. Jeśli zajdzie taka potrzeba, znajdziemy dla Ciebie fotografa w Twojej okolicy.",
+        "Spokojnie! Możemy wykorzystać zdjęcia, które już masz. Pokażemy Ci jak zrobić dobre zdjęcia telefonem. A jeśli będzie trzeba, znajdziemy dobrego fotografa w Twojej okolicy.",
     },
   ];
 

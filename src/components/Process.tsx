@@ -5,30 +5,30 @@ const Process = () => {
     {
       icon: MessageSquare,
       number: "01",
-      title: "Rozmowa bez zobowiązań",
+      title: "Spotkajmy się na kawie (lub przez telefon)",
       description:
-        "Rozmawiamy o Twoim salonie, co chcesz osiągnąć i jaki masz budżet. Wszystko jest jasne i proste – bez ukrytych kosztów czy niejasności. Po prostu szczera rozmowa.",
+        "Opowiesz o swoim salonie, co chcesz osiągnąć i jaki masz budżet. Bez sprzedażowego gadania – po prostu szczera rozmowa. Wszystko jasne, bez ukrytych kosztów.",
     },
     {
       icon: Palette,
       number: "02",
-      title: "Przygotowanie reklam",
+      title: "Przygotujemy Twoje reklamy",
       description:
-        "Projektujemy grafiki i teksty do reklam. Przygotowujemy kilka wersji, żeby przetestować, co zadziała najlepiej. Możesz być spokojna – wszystko będzie wyglądało profesjonalnie.",
+        "Stworzymy grafiki i teksty do kampanii. Zrobimy kilka wersji, żeby przetestować co zadziała najlepiej na Twoje miasto. Wszystko będzie wyglądało profesjonalnie – obiecujemy.",
     },
     {
       icon: Rocket,
       number: "03",
-      title: "Uruchomienie",
+      title: "Uruchomimy kampanię",
       description:
-        "Ustawiamy kampanię tak, żeby dotrzeć do właściwych osób w Twojej okolicy. Od tego momentu Twoje reklamy zaczynają działać – kobiety z Twojego miasta i okolic zobaczą Twoją ofertę.",
+        "Skonfigurujemy wszystko tak, żeby reklamy dotarły do kobiet z Twojego miasta i okolic, które szukają usług kosmetycznych. Od tego momentu Twój telefon zacznie dzwonić.",
     },
     {
       icon: LineChart,
       number: "04",
-      title: "Dbamy o wyniki",
+      title: "Będziemy poprawiać i raportować",
       description:
-        "Codziennie sprawdzamy, co działa i wprowadzamy poprawki. Co tydzień dostajesz prosty raport – bez skomplikowanych liczb, tylko najważniejsze informacje i to, co faktycznie się wydarzyło.",
+        "Codziennie sprawdzamy co działa i ulepszamy kampanię. Co tydzień dostaniesz prosty raport – bez skomplikowanych wykresów, tylko najważniejsze: co się stało i jak Ci idzie.",
     },
   ];
 
@@ -46,7 +46,7 @@ const Process = () => {
             Jak to <span className="text-gradient-pink">wygląda</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Proste kroki – bez zbędnych komplikacji i branżowego bełkotu
+            Krok po kroku – bez skomplikowanych procedur i niezrozumiałych terminów
           </p>
         </div>
 

@@ -5,30 +5,30 @@ const Process = () => {
     {
       icon: MessageSquare,
       number: "01",
-      title: "Spotkajmy się na kawie (lub przez telefon)",
+      title: "Rozmowa i strategia",
       description:
-        "Opowiesz o swoim salonie, co chcesz osiągnąć i jaki masz budżet. Bez sprzedażowego gadania – po prostu szczera rozmowa. Wszystko jasne, bez ukrytych kosztów.",
+        "Rozmawiamy o Twoim salonie, usługach i celach. Poznajemy Twoją historię i to, co jest dla Ciebie ważne. Ustalamy budżet reklamowy i określamy, jak będzie wyglądała nasza współpraca.",
     },
     {
       icon: Palette,
       number: "02",
-      title: "Przygotujemy Twoje reklamy",
+      title: "Kreacje reklamowe",
       description:
-        "Stworzymy grafiki i teksty do kampanii. Zrobimy kilka wersji, żeby przetestować co zadziała najlepiej na Twoje miasto. Wszystko będzie wyglądało profesjonalnie – obiecujemy.",
+        "Projektujemy profesjonalne grafiki i piszemy teksty reklamowe dopasowane do charakteru Twojego salonu. Przygotowujemy kilka wariantów, aby przetestować, co działa najlepiej w Twoim regionie.",
     },
     {
       icon: Rocket,
       number: "03",
-      title: "Uruchomimy kampanię",
+      title: "Uruchomienie kampanii",
       description:
-        "Skonfigurujemy wszystko tak, żeby reklamy dotarły do kobiet z Twojego miasta i okolic, które szukają usług kosmetycznych. Od tego momentu Twój telefon zacznie dzwonić.",
+        "Konfigurujemy precyzyjne targetowanie i uruchamiamy kampanie. Od tego momentu Twoje reklamy zaczynają docierać do kobiet z Twojego miasta, które szukają usług beauty.",
     },
     {
       icon: LineChart,
       number: "04",
-      title: "Będziemy poprawiać i raportować",
+      title: "Optymalizacja i raportowanie",
       description:
-        "Codziennie sprawdzamy co działa i ulepszamy kampanię. Co tydzień dostaniesz prosty raport – bez skomplikowanych wykresów, tylko najważniejsze: co się stało i jak Ci idzie.",
+        "Codziennie monitorujemy wyniki i wprowadzamy usprawnienia. Co tydzień wysyłamy raport z najważniejszymi danymi i rekomendacjami na kolejny okres – zawsze wiesz, jak przebiega kampania.",
     },
   ];
 
@@ -46,7 +46,7 @@ const Process = () => {
             Jak to <span className="text-gradient-pink">wygląda</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Krok po kroku – bez skomplikowanych procedur i niezrozumiałych terminów
+            Prosty, przejrzysty proces – od pierwszej rozmowy do wymiernych efektów
           </p>
         </div>
 

@@ -13,7 +13,7 @@ const Contact = () => {
               Porozmawiajmy o <span className="text-gradient-pink">Twoim salonie</span>
             </h2>
             <p className="text-lg sm:text-xl text-white/60">
-              Umów bezpłatną rozmowę – bez nacisku, bez zobowiązań. Po prostu szczerze.
+              Umów bezpłatną konsultację – chcemy poznać Twoją historię i dowiedzieć się, jak możemy pomóc
             </p>
           </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
           {/* Footer */}
           <div className="mt-12 sm:mt-16 text-center text-white/40 text-xs sm:text-sm px-4">
             <p>© 2024 Aurine. Wszystkie prawa zastrzeżone.</p>
-            <p className="mt-2">Reklamy, które naprawdę działają – dla salonów w małych miastach</p>
+            <p className="mt-2">Kampanie reklamowe dla salonów beauty w małych miastach</p>
           </div>
         </div>
       </div>

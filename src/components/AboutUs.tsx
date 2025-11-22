@@ -15,12 +15,12 @@ const AboutUs = () => {
             <span className="text-primary font-semibold text-sm sm:text-base">O Aurine</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Agencja dla salonów
+            Agencja dla salonów beauty
             <br />
             w <span className="text-gradient-pink">małych miastach</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Wiemy, jak to jest prowadzić salon poza dużym miastem. Pomagamy właścicielkom salonów kosmetycznych przyciągnąć klientki z okolicy – szczerze, bez obietnic bez pokrycia.
+            Wiemy, jak to jest prowadzić salon poza dużym miastem. Pomagamy właścicielkom salonów fryzjerskich, kosmetycznych, SPA i gabinetów medycyny estetycznej przyciągnąć klientki z okolicy – szczerze, bez obietnic bez pokrycia.
           </p>
         </div>
 
@@ -33,10 +33,10 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nasza misja</h3>
             <p className="text-white/80 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-              Wierzymy, że każdy salon – niezależnie od tego, czy jest w dużym mieście, czy w małej miejscowości – zasługuje na pełen terminarz.
+              Wierzymy, że każdy salon beauty – niezależnie od tego, czy jest w dużym mieście, czy w małej miejscowości – zasługuje na pełen terminarz.
             </p>
             <p className="text-white/80 leading-relaxed text-sm sm:text-base">
-              Skupiamy się na salonach w mniejszych miejscowościach, ponieważ wiemy, że tam reklamy online mogą zdziałać cuda. Lokalna konkurencja często nie prowadzi kampanii albo robi to nieskutecznie – a my pomagamy Ci to wykorzystać.
+              Skupiamy się na mniejszych miejscowościach, ponieważ wiemy, że tam reklamy online mogą zdziałać cuda. Lokalna konkurencja często nie prowadzi kampanii albo robi to nieskutecznie – a my pomagamy Ci to wykorzystać.
             </p>
           </div>
 

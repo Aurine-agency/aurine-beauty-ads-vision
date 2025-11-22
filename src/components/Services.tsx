@@ -4,27 +4,27 @@ const Services = () => {
   const services = [
     {
       icon: Target,
-      title: "Dotrzemy do właściwych kobiet",
+      title: "Precyzyjne targetowanie",
       description:
-        "Twoje reklamy zobaczą kobiety z Twojego miasta, które naprawdę szukają usług kosmetycznych. Nie wyrzucasz pieniędzy w błoto – każda złotówka pracuje dla Ciebie.",
+        "Twoje reklamy docierają do kobiet z Twojego regionu, które aktywnie szukają usług beauty. Ustawiamy parametry tak, aby każda złotówka trafiała do właściwej osoby – nie marnujemy Twojego budżetu.",
     },
     {
       icon: TrendingUp,
-      title: "Codziennie usprawniamy kampanię",
+      title: "Optymalizacja kampanii",
       description:
-        "Nie uruchamiamy kampanii i nie zostawiamy jej samej sobie. Codziennie sprawdzamy wyniki i poprawiamy to, co trzeba – żeby działało coraz lepiej i kosztowało mniej.",
+        "Codziennie analizujemy wyniki i dostosowujemy strategię. Testujemy różne podejścia i skalujemy to, co działa najlepiej – dzięki temu obniżamy koszty i zwiększamy efekty.",
     },
     {
       icon: Sparkles,
-      title: "Projektujemy reklamy, które przyciągają",
+      title: "Profesjonalne kreacje",
       description:
-        "Tworzym grafiki i teksty, które zatrzymują uwagę – nie generic, wyświechtane szablony. Proste, ładne i napisane tak, żeby kobieta chciała zadzwonić właśnie do Ciebie.",
+        "Tworzymy reklamy, które zatrzymują wzrok. Estetyczne grafiki i teksty pisane językiem korzyści, które przekonują do umówienia wizyty właśnie w Twoim salonie.",
     },
     {
       icon: Users,
-      title: "Zawsze wiesz, co się dzieje",
+      title: "Przejrzyste raportowanie",
       description:
-        "Co tydzień dostaniesz prosty raport – bez zbędnych liczb i wykresów, tylko najważniejsze informacje. Ile osób zobaczyło, ile kliknęło, ile zapytało i ile to kosztowało.",
+        "Co tydzień otrzymujesz zrozumiały raport pokazujący najważniejsze dane – wyświetlenia, kliknięcia, zapytania i koszt pozyskania klientki. Zawsze wiesz, jak przebiega kampania.",
     },
   ];
 
@@ -42,7 +42,7 @@ const Services = () => {
             <span className="text-gradient-pink"> zrobimy</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Zajmujemy się wszystkim, co potrzebne – Ty po prostu przyjmujesz nowe klientki
+            Zajmujemy się wszystkim, co potrzebne – Ty skupiasz się na tym, co robisz najlepiej
           </p>
         </div>
 

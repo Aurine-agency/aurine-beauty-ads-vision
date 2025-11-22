@@ -41,7 +41,7 @@ const Results = () => {
             Co możesz <span className="text-gradient-pink">zyskać</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Realne efekty, które poczujesz w swoim salonie
+            Konkretne rezultaty, które zobaczysz w swoim salonie
           </p>
         </div>
 
@@ -70,12 +70,12 @@ const Results = () => {
           </h3>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {[
-              "Zajmujemy się tylko salonami kosmetycznymi – znamy tę branżę od podszewki",
-              "Zawsze wiesz za co płacisz i jakie są efekty – zero ukrytych kosztów",
-              "Możesz odejść w każdej chwili – rozliczamy się co miesiąc, bez wiązania na lata",
-              "Możesz do nas napisać czy zadzwonić kiedy chcesz – nie jesteśmy duchem",
-              "Dbamy o Twój budżet jak o własny – nie wyrzucamy pieniędzy w błoto",
-              "Pomożemy Ci ze zdjęciami i tekstami – nie musisz być ekspertem od marketingu",
+              "Specjalizacja wyłącznie w branży beauty – rozumiemy specyfikę tego rynku",
+              "Pełna transparentność – zawsze wiesz, za co płacisz i jakie są efekty",
+              "Rozliczenia miesięczne, bez długoterminowych zobowiązań",
+              "Jesteśmy dostępni – odpowiadamy na pytania i służymy wsparciem",
+              "Efektywne wykorzystanie budżetu – dbamy o każdą złotówkę",
+              "Pomoc w przygotowaniu materiałów – zdjęcia, teksty, grafiki",
             ].map((benefit, index) => (
               <div
                 key={index}

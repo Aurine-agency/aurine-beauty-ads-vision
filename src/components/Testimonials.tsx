@@ -96,20 +96,20 @@ const Testimonials = () => {
                     : "opacity-0 translate-x-full"
                 }`}
               >
-                <div className="relative bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-md rounded-[2rem] p-8 md:p-12 border border-gray-800/50 shadow-xl">
+                <div className="relative bg-gradient-to-br from-[#1a1a1a] via-[#1f1a1d] to-[#1a1a1a] backdrop-blur-md rounded-[2rem] p-10 md:p-14 border border-gray-800/40">
                   <div className="flex items-center justify-center gap-1 mb-8">
                     {renderStars(testimonial.rating)}
                   </div>
 
-                  <p className="text-white text-center mb-10 text-lg md:text-xl leading-relaxed">
+                  <p className="text-white text-center mb-12 text-lg md:text-xl leading-relaxed font-light">
                     "{testimonial.text}"
                   </p>
 
-                  <div className="pt-8 border-t border-gray-700/30 text-center">
-                    <p className="text-white font-semibold text-xl mb-1">
+                  <div className="pt-6 border-t border-gray-700/40 text-center">
+                    <p className="text-white font-semibold text-lg mb-1">
                       {testimonial.name}
                     </p>
-                    <p className="text-gray-400">
+                    <p className="text-gray-500 text-sm">
                       {testimonial.business}
                     </p>
                   </div>

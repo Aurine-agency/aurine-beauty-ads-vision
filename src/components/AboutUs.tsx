@@ -45,9 +45,9 @@ const AboutUs = () => {
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/30 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
               <Heart className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nasze doświadczenie</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nasze podejście</h3>
             <p className="text-white/80 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-              Przez ostatnie lata współpracowaliśmy z salonami w całej Polsce – szczególnie z mniejszych miejscowości, gdzie reklamy online działają wyjątkowo dobrze.
+              Studiowaliśmy kampanie setek salonów, analizowaliśmy co działa, a co nie. Zdobyliśmy certyfikaty Facebook Ads i nauczyliśmy się tego na własnych kampaniach.
             </p>
             <p className="text-white/80 leading-relaxed text-sm sm:text-base">
               Do każdej współpracy podchodzimy indywidualnie. Nie stosujemy szablonów – bo Twój salon i Twoje miasto są unikalne. Tworzymy kampanie idealnie dopasowane do Ciebie.

@@ -51,7 +51,11 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/40 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-secondary/40 rounded-full blur-3xl"></div>
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
@@ -92,8 +96,8 @@ const Testimonials = () => {
                     : "opacity-0 translate-x-full"
                 }`}
               >
-                <div className="relative rounded-[2rem] border border-white/10 bg-gradient-to-b from-black via-black to-black px-10 py-12 md:px-16 md:py-14 overflow-hidden shadow-[0_0_40px_hsl(var(--primary)/0.18)]">
-                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_hsl(var(--primary))_0,_transparent_55%)] opacity-80" />
+                <div className="relative rounded-[2rem] border border-white/5 bg-gradient-to-b from-[#2a1f2e] via-[#1a1520] to-[#0f0a12] px-10 py-12 md:px-16 md:py-14 overflow-hidden">
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-purple-900/10 via-transparent to-transparent" />
                   <div className="relative z-10">
                     <div className="flex items-center justify-center gap-1 mb-8">
                       {renderStars(testimonial.rating)}

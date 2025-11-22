@@ -7,28 +7,28 @@ const Process = () => {
       number: "01",
       title: "Konsultacja i strategia",
       description:
-        "Z uwagą poznajemy Twój biznes, cele oraz grupę docelową. Wspólnie opracowujemy strategię kampanii idealnie dopasowaną do Twoich potrzeb i budżetu.",
+        "Rozmawiamy o Twoim salonie, usługach i celach. Ustalamy budżet reklamowy i określamy, jak będzie wyglądała współpraca. Wszystko jasne i bez ukrytych kosztów.",
     },
     {
       icon: Palette,
       number: "02",
       title: "Kreacje reklamowe",
       description:
-        "Z dbałością o każdy szczegół projektujemy profesjonalne reklamy z atrakcyjnymi grafikami i ciepłymi tekstami, które skutecznie wyróżnią Twój salon.",
+        "Projektujemy profesjonalne grafiki i piszemy teksty reklamowe. Przygotowujemy kilka wariantów reklam, które przetestujemy, aby znaleźć najskuteczniejsze połączenie.",
     },
     {
       icon: Rocket,
       number: "03",
       title: "Uruchomienie kampanii",
       description:
-        "Profesjonalnie konfigurujemy kampanie z precyzyjnym targetowaniem i sprawnie uruchamiamy je w Facebook Ads Manager, dbając o każdy detal.",
+        "Konfigurujemy precyzyjne targetowanie w Facebook Ads Manager i uruchamiamy kampanie. Od tego momentu Twoje reklamy zaczynają docierać do potencjalnych klientek.",
     },
     {
       icon: LineChart,
       number: "04",
       title: "Optymalizacja i raportowanie",
       description:
-        "Z zaangażowaniem monitorujemy wyniki, optymalizujemy budżet i regularnie dostarczamy przejrzyste raporty z naszymi najlepszymi rekomendacjami.",
+        "Codziennie sprawdzamy wyniki i wprowadzamy poprawki. Co tydzień wysyłamy raport z najważniejszymi danymi i rekomendacjami na kolejny okres.",
     },
   ];
 
@@ -41,12 +41,12 @@ const Process = () => {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Jak to <span className="text-gradient-pink">działa?</span>
           </h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Krok po kroku, bez zbędnego zamieszania
+          <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
+            Prosty, przejrzysty proces od pierwszej rozmowy do efektów
           </p>
         </div>
 

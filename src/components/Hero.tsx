@@ -19,15 +19,15 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
           <div className="text-left animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Więcej klientek
               <br />
               do Twojego
               <br />
               <span className="text-gradient-pink glow-pink">salonu</span>
             </h1>
-            <p className="text-xl text-white/70 mb-8 max-w-xl">
-              Z pasją wspieramy salony kosmetyczne w przyciąganiu nowych klientek przez Facebook i Instagram. Profesjonalnie, przejrzyście i z sercem.
+            <p className="text-lg sm:text-xl text-white/70 mb-8 max-w-xl">
+              Skuteczne kampanie reklamowe na Facebook i Instagram, które przyciągają nowe klientki do Twojego salonu kosmetycznego. Bez zbędnych kosztów, z pełną transparentnością.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button

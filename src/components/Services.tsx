@@ -6,25 +6,25 @@ const Services = () => {
       icon: Target,
       title: "Precyzyjne targetowanie",
       description:
-        "Z dbałością o detale docieramy do potencjalnych klientek z Twojego regionu, które aktywnie poszukują usług beauty. Precyzyjnie trafiamy w odpowiedni wiek, lokalizację i zainteresowania.",
+        "Docieramy do kobiet z Twojego regionu, które aktywnie szukają usług kosmetycznych. Ustawiamy parametry wiekowe, lokalizacyjne i zainteresowania tak, aby każda złotówka trafiała do właściwej osoby.",
     },
     {
       icon: TrendingUp,
       title: "Optymalizacja kampanii",
       description:
-        "Z zaangażowaniem monitorujemy wyniki i wprowadzamy ulepszenia, aby maksymalizować wartość każdej wydanej złotówki. Dbamy o to, by każdy krok był przemyślany i skuteczny.",
+        "Codziennie analizujemy wyniki i dostosowujemy strategię, aby obniżać koszty pozyskania klientki. Testujemy różne podejścia i skalujemy to, co działa najlepiej.",
     },
     {
       icon: Sparkles,
       title: "Profesjonalne kreacje",
       description:
-        "Z pasją projektujemy atrakcyjne wizualnie reklamy z dopracowanymi tekstami, które naturalnie wyróżniają się w feedzie i ciepło przyciągają uwagę Twoich przyszłych klientek.",
+        "Tworzymy reklamy, które zatrzymują wzrok w feedzie. Estetyczne grafiki i teksty pisane językiem korzyści, które przekonują do umówienia wizyty w Twoim salonie.",
     },
     {
       icon: Users,
       title: "Przejrzyste raportowanie",
       description:
-        "Regularnie otrzymujesz szczegółowy, przejrzysty raport z wynikami kampanii oraz naszymi rekomendacjami. Zawsze wiesz dokładnie, za co płacisz i jakie efekty wspólnie osiągamy.",
+        "Co tydzień otrzymujesz zrozumiały raport pokazujący liczbę wyświetleń, kliknięć, zapytań i koszt pozyskania klientki. Wiesz dokładnie, ile zarabiasz na każdej wydanej złotówce.",
     },
   ];
 
@@ -35,14 +35,14 @@ const Services = () => {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 blur-3xl rounded-full" />
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Co dla Ciebie
-            <br />
-            <span className="text-gradient-pink">zrobimy?</span>
+            <br className="sm:hidden" />
+            <span className="text-gradient-pink"> zrobimy?</span>
           </h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Zajmujemy się wszystkim od A do Z
+          <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
+            Kompleksowa obsługa kampanii reklamowych
           </p>
         </div>
 

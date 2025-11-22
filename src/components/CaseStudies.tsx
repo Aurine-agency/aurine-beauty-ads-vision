@@ -76,22 +76,22 @@ const CaseStudies = () => {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 blur-3xl rounded-full" />
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Prawdziwe <span className="text-gradient-pink">sukcesy</span>
           </h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Konkretne przykłady kampanii, które z pasją przeprowadziliśmy
+          <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
+            Przykłady kampanii, które przeprowadziliśmy
           </p>
         </div>
 
         {/* Case study selector */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 px-4">
           {caseStudies.map((study, index) => (
             <button
               key={index}
               onClick={() => setActiveCase(index)}
-              className={`px-6 py-3 rounded-full font-semibold transition-all ${
+              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold transition-all text-sm sm:text-base ${
                 activeCase === index
                   ? "bg-primary text-white shadow-[0_0_20px_hsl(328,100%,54%/0.4)]"
                   : "bg-white/5 text-white/60 hover:bg-white/10 hover:text-white border border-white/10"

@@ -28,8 +28,8 @@ const Navigation = () => {
           : "bg-black/80 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <button
             onClick={() => scrollToSection("hero")}
             className="flex items-center gap-3 hover:opacity-80 transition-opacity z-50"
@@ -37,9 +37,9 @@ const Navigation = () => {
             <img
               src={aurineLogoImage}
               alt="Aurine"
-              className="h-10 w-10"
+              className="h-8 w-8 sm:h-10 sm:w-10"
             />
-            <span className="text-2xl font-bold text-white">Aurine</span>
+            <span className="text-xl sm:text-2xl font-bold text-white">Aurine</span>
           </button>
 
           {/* Desktop menu */}

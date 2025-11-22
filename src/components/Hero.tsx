@@ -26,10 +26,17 @@ const Hero = () => {
               <br />
               <span className="text-gradient-pink glow-pink">salonu</span>
             </h1>
-            <p className="text-xl text-white/70 mb-8 max-w-xl">
+            <p className="text-xl text-white/70 mb-6 max-w-xl">
               Pomagamy salonom kosmetycznym i beauty przyciągnąć więcej klientek
               przez Facebook i Instagram. Profesjonalnie, przejrzyście i skutecznie.
             </p>
+            
+            <div className="mb-8 inline-block bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/50 rounded-full px-6 py-3 backdrop-blur-sm">
+              <p className="text-primary font-semibold text-lg">
+                🎁 Dla pierwszych 2 salonów w każdym mieście - tydzień kampanii GRATIS!
+              </p>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}

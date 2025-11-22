@@ -47,10 +47,10 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Jak pracujemy</h3>
             <p className="text-white/80 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-              Znamy specyfikę branży beauty i wiemy, jak dotrzeć do kobiet szukających usług kosmetycznych. Rozumiemy, czego potrzebują właścicielki salonów w małych miastach.
+              Wierzymy, że za każdą właścicielką salonu kryje się inna historia, inne marzenia i wyzwania. Dlatego nigdy nie stosujemy szablonów ani gotowych rozwiązań.
             </p>
             <p className="text-white/80 leading-relaxed text-sm sm:text-base">
-              Każda kampania jest dopasowana indywidualnie – nie ma u nas szablonów. Twój salon, Twoje miasto i Twoja sytuacja są unikalne, więc tak właśnie traktujemy każdą współpracę.
+              Każdą współpracę zaczynamy od rozmowy – chcemy poznać Ciebie, Twój salon i to, co jest dla Ciebie ważne. Dopiero wtedy tworzymy kampanię szytą na miarę, idealnie dopasowaną do Twojej sytuacji.
             </p>
           </div>
         </div>

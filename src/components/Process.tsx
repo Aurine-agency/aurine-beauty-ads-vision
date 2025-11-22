@@ -5,30 +5,30 @@ const Process = () => {
     {
       icon: MessageSquare,
       number: "01",
-      title: "Konsultacja i strategia",
+      title: "Gadamy o Twoim salonie",
       description:
-        "Poznajemy Twój biznes, grupę docelową i cele. Opracowujemy strategię kampanii dopasowaną do Twoich potrzeb.",
+        "Poznajemy się, opowiadasz nam o swoim biznesie i klientkach. Wspólnie ustalamy, co chcesz osiągnąć.",
     },
     {
       icon: Palette,
       number: "02",
-      title: "Kreacje reklamowe",
+      title: "Robimy ładne reklamy",
       description:
-        "Projektujemy atrakcyjne wizualnie reklamy z profesjonalnymi zdjęciami i przekonującymi tekstami.",
+        "Przygotowujemy grafiki i teksty, które przyciągną uwagę. Pokażemy Ci je zanim cokolwiek ruszymy.",
     },
     {
       icon: Rocket,
       number: "03",
-      title: "Uruchomienie kampanii",
+      title: "Włączamy kampanię",
       description:
-        "Konfigurujemy kampanie z precyzyjnym targetowaniem i uruchamiamy je na Facebook Ads Manager.",
+        "Ustawiamy wszystko na Facebooku i Instagramie, żeby reklamy trafiały do właściwych osób z Twojego miasta.",
     },
     {
       icon: LineChart,
       number: "04",
-      title: "Optymalizacja i raportowanie",
+      title: "Dbamy o wyniki",
       description:
-        "Monitorujemy wyniki, optymalizujemy budżet i dostarczamy regularne raporty z rekomendacjami.",
+        "Sprawdzamy codziennie co działa i co można poprawić. Co miesiąc pokazujemy Ci dokładne wyniki.",
     },
   ];
 
@@ -43,10 +43,10 @@ const Process = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Jak <span className="text-gradient-pink">pracujemy?</span>
+            Jak to <span className="text-gradient-pink">działa?</span>
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Prosty, przejrzysty proces współpracy
+            Krok po kroku, bez zbędnego zamieszania
           </p>
         </div>
 

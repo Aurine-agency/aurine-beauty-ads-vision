@@ -5,21 +5,21 @@ const Results = () => {
   const stats = [
     {
       icon: Users2,
-      value: "300%",
-      label: "Wzrost liczby klientów",
-      description: "Średnio dla naszych klientów",
+      value: "3x więcej",
+      label: "Nowych klientek",
+      description: "Średnio u naszych klientek",
     },
     {
       icon: DollarSign,
-      value: "2.5x",
-      label: "ROI kampanii",
-      description: "Zwrot z inwestycji",
+      value: "15-30",
+      label: "Nowych klientek",
+      description: "Co miesiąc w małym mieście",
     },
     {
       icon: TrendingUp,
-      value: "-40%",
-      label: "Koszt pozyskania",
-      description: "Spadek kosztu nowego klienta",
+      value: "Od 1500 zł",
+      label: "Miesięcznie",
+      description: "Budżet + obsługa",
     },
   ];
 
@@ -38,10 +38,10 @@ const Results = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Efekty, które się <span className="text-gradient-pink">liczą</span>
+            Co możesz <span className="text-gradient-pink">zyskać?</span>
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Nasze kampanie przynoszą mierzalne rezultaty dla biznesów beauty
+            Konkretne liczby z naszych kampanii
           </p>
         </div>
 
@@ -66,16 +66,16 @@ const Results = () => {
         {/* Benefits list */}
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12 animate-fade-in">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-            Dlaczego warto z nami współpracować?
+            Dlaczego właśnie my?
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "Specjalizacja w branży beauty",
-              "Przejrzyste raportowanie wyników",
-              "Elastyczne pakiety współpracy",
-              "Dedykowany opiekun kampanii",
-              "Stała optymalizacja budżetu",
-              "Wsparcie w content creation",
+              "Znamy branżę beauty od podszewki",
+              "Zawsze wiesz co się dzieje i za co płacisz",
+              "Rozliczamy się miesięcznie, bez długich umów",
+              "Jesteśmy na telefon, jak coś jest niejasne",
+              "Nie marnujemy Twoich pieniędzy",
+              "Pomagamy też ze zdjęciami i tekstami",
             ].map((benefit, index) => (
               <div
                 key={index}

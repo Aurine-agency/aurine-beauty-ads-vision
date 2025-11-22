@@ -20,22 +20,22 @@ const Hero = () => {
           {/* Left column - Text content */}
           <div className="text-left animate-fade-in-up">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Facebook Ads
+              Więcej klientek
               <br />
-              dla branży
+              do Twojego
               <br />
-              <span className="text-gradient-pink glow-pink">beauty</span>
+              <span className="text-gradient-pink glow-pink">salonu</span>
             </h1>
             <p className="text-xl text-white/70 mb-8 max-w-xl">
-              Specjalizujemy się w kampaniach reklamowych na Facebooku dla salonów
-              kosmetycznych, klinik medycyny estetycznej i marek beauty.
+              Pomagamy salonom kosmetycznym i beauty przyciągnąć więcej klientek
+              przez Facebook i Instagram. Bez kombinowania, bez tajemnic.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={scrollToContact}
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.6)]"
               >
-                Rozpocznij współpracę
+                Porozmawiajmy
               </button>
               <button
                 onClick={() => {
@@ -44,7 +44,7 @@ const Hero = () => {
                 }}
                 className="border-2 border-white/20 hover:border-primary text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:bg-white/5"
               >
-                Poznaj nas
+                Zobacz co robimy
               </button>
             </div>
           </div>

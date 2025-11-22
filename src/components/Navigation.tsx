@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import aurineLogoImage from "@/assets/aurine-logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,21 +17,22 @@ const Navigation = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
+    setIsMobileMenuOpen(false);
   };
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-black/90 backdrop-blur-lg border-b border-white/10"
-          : "bg-transparent"
+          ? "bg-black/95 backdrop-blur-lg border-b border-white/10"
+          : "bg-black/80 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => scrollToSection("hero")}
-            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity z-50"
           >
             <img
               src={aurineLogoImage}
@@ -39,6 +42,7 @@ const Navigation = () => {
             <span className="text-2xl font-bold text-white">Aurine</span>
           </button>
 
+          {/* Desktop menu */}
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("services")}
@@ -50,13 +54,19 @@ const Navigation = () => {
               onClick={() => scrollToSection("process")}
               className="text-white/80 hover:text-primary transition-colors"
             >
-              Proces
+              Jak to działa
             </button>
             <button
-              onClick={() => scrollToSection("results")}
+              onClick={() => scrollToSection("testimonials")}
               className="text-white/80 hover:text-primary transition-colors"
             >
-              Efekty
+              Opinie
+            </button>
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="text-white/80 hover:text-primary transition-colors"
+            >
+              FAQ
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -65,8 +75,54 @@ const Navigation = () => {
               Kontakt
             </button>
           </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-white z-50"
+          >
+            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 bg-black/98 backdrop-blur-lg pt-24 px-6 animate-fade-in">
+          <div className="flex flex-col gap-6">
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-white text-xl hover:text-primary transition-colors text-left"
+            >
+              Usługi
+            </button>
+            <button
+              onClick={() => scrollToSection("process")}
+              className="text-white text-xl hover:text-primary transition-colors text-left"
+            >
+              Jak to działa
+            </button>
+            <button
+              onClick={() => scrollToSection("testimonials")}
+              className="text-white text-xl hover:text-primary transition-colors text-left"
+            >
+              Opinie
+            </button>
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="text-white text-xl hover:text-primary transition-colors text-left"
+            >
+              FAQ
+            </button>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="bg-primary text-white px-6 py-3 rounded-full text-xl font-semibold mt-4"
+            >
+              Kontakt
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

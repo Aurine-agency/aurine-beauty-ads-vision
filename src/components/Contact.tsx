@@ -10,10 +10,10 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Gotowa na <span className="text-gradient-pink">rozwój?</span>
+              Chcesz więcej <span className="text-gradient-pink">klientek?</span>
             </h2>
             <p className="text-xl text-white/60">
-              Skontaktuj się z nami i poznaj możliwości Facebook Ads dla Twojego biznesu
+              Napisz do nas, pogadamy bez zobowiązań
             </p>
           </div>
 
@@ -61,7 +61,7 @@ const Contact = () => {
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.6)]"
               >
                 <Mail className="w-5 h-5" />
-                Wyślij wiadomość
+                Napisz do nas
               </a>
             </div>
           </div>

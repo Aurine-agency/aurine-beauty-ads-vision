@@ -4,27 +4,27 @@ const Services = () => {
   const services = [
     {
       icon: Target,
-      title: "Precyzyjne targetowanie",
+      title: "Trafiamy do prawdziwych klientek",
       description:
-        "Dotrzemy do idealnych klientów dla Twojego salonu - kobiet zainteresowanych zabiegami beauty w odpowiednim wieku i lokalizacji.",
+        "Pokazujemy Twoje reklamy kobietom z Twojego miasta, które szukają takich usług jak Ty oferujesz.",
     },
     {
       icon: TrendingUp,
-      title: "Optymalizacja kampanii",
+      title: "Pilnujemy Twojego budżetu",
       description:
-        "Stale monitorujemy i optymalizujemy kampanie, aby maksymalizować zwrot z inwestycji i obniżać koszty pozyskania klienta.",
+        "Na bieżąco sprawdzamy co działa najlepiej i dbamy, żebyś płaciła tylko za to, co przynosi efekty.",
     },
     {
       icon: Sparkles,
-      title: "Kreacje premium",
+      title: "Ładne reklamy",
       description:
-        "Tworzymy atrakcyjne wizualnie reklamy, które wyróżniają się w feedzie i skutecznie przyciągają uwagę potencjalnych klientek.",
+        "Robimy takie grafiki i teksty, żeby klientki chciały zatrzymać się i kliknąć. Bez zbędnego kombinowania.",
     },
     {
       icon: Users,
-      title: "Analiza i raportowanie",
+      title: "Wiesz co się dzieje",
       description:
-        "Otrzymujesz przejrzyste raporty z wynikami kampanii i rekomendacjami dalszych działań. Zawsze wiesz, za co płacisz.",
+        "Co miesiąc dostaniesz jasny raport - ile osób widziało reklamy, ile dzwoniło, ile przyszło. Wszystko na prostą.",
     },
   ];
 
@@ -37,12 +37,12 @@ const Services = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Kompleksowa obsługa
+            Co dla Ciebie
             <br />
-            <span className="text-gradient-pink">Facebook Ads</span>
+            <span className="text-gradient-pink">zrobimy?</span>
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Zajmiemy się wszystkim - od strategii po realizację kampanii
+            Zajmujemy się wszystkim od A do Z
           </p>
         </div>
 

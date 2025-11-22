@@ -6,25 +6,25 @@ const Services = () => {
       icon: Target,
       title: "Precyzyjne targetowanie",
       description:
-        "Docieramy do potencjalnych klientek z Twojego regionu, które są zainteresowane usługami beauty. Trafiamy w odpowiedni wiek, lokalizację i zainteresowania.",
+        "Z dbałością o detale docieramy do potencjalnych klientek z Twojego regionu, które aktywnie poszukują usług beauty. Precyzyjnie trafiamy w odpowiedni wiek, lokalizację i zainteresowania.",
     },
     {
       icon: TrendingUp,
       title: "Optymalizacja kampanii",
       description:
-        "Systematycznie analizujemy wyniki i wprowadzamy poprawki, aby maksymalizować efektywność każdej wydanej złotówki. Każdy krok jest przemyślany.",
+        "Z zaangażowaniem monitorujemy wyniki i wprowadzamy ulepszenia, aby maksymalizować wartość każdej wydanej złotówki. Dbamy o to, by każdy krok był przemyślany i skuteczny.",
     },
     {
       icon: Sparkles,
       title: "Profesjonalne kreacje",
       description:
-        "Tworzymy atrakcyjne wizualnie reklamy z dopracowanymi tekstami, które wyróżniają się w feedzie i skutecznie przyciągają uwagę.",
+        "Z pasją projektujemy atrakcyjne wizualnie reklamy z dopracowanymi tekstami, które naturalnie wyróżniają się w feedzie i ciepło przyciągają uwagę Twoich przyszłych klientek.",
     },
     {
       icon: Users,
       title: "Przejrzyste raportowanie",
       description:
-        "Co miesiąc otrzymujesz szczegółowy raport z wynikami kampanii i rekomendacjami. Zawsze wiesz dokładnie, za co płacisz i jakie efekty osiągasz.",
+        "Regularnie otrzymujesz szczegółowy, przejrzysty raport z wynikami kampanii oraz naszymi rekomendacjami. Zawsze wiesz dokładnie, za co płacisz i jakie efekty wspólnie osiągamy.",
     },
   ];
 

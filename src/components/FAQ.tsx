@@ -8,32 +8,32 @@ const FAQ = () => {
     {
       question: "Ile to kosztuje?",
       answer:
-        "To zależy od Twojego budżetu reklamowego i tego, co chcesz osiągnąć. Zazwyczaj startujemy od 1500-2000 zł miesięcznie (budżet + nasza obsługa). Najlepiej po prostu pogadać, wtedy wszystko będzie jasne.",
+        "Zależy to od Twojego budżetu reklamowego i celów, które chcesz osiągnąć. Zazwyczaj startujemy od 1500-2000 zł miesięcznie (budżet reklamowy + nasza obsługa). Najlepiej po prostu porozmawiać - wtedy wszystko stanie się jasne.",
     },
     {
       question: "Jak długo trzeba czekać na efekty?",
       answer:
-        "Pierwsze zapytania i telefony od klientek przychodzą już w pierwszym tygodniu. Pełny obraz sytuacji masz po około miesiącu - wtedy widzimy co działa najlepiej i możemy to podkręcić.",
+        "Pierwsze zapytania od zainteresowanych klientek przychodzą już w pierwszym tygodniu. Pełny obraz sytuacji otrzymujesz po około miesiącu - wtedy widać wyraźnie, co działa najlepiej i możemy dalej to optymalizować.",
     },
     {
       question: "Czy to działa w małych miastach?",
       answer:
-        "Działa super! Facebook pozwala nam pokazywać reklamy dokładnie osobom z Twojego miasta i okolic. Często w małych miejscowościach jest łatwiej, bo konkurencja nie robi reklam albo robi je źle.",
+        "Działa świetnie! Facebook pozwala nam precyzyjnie dotrzeć do osób z Twojego miasta i okolic. Często w mniejszych miejscowościach jest łatwiej osiągnąć sukces, ponieważ konkurencja nie prowadzi reklam lub robi je nieskutecznie.",
     },
     {
       question: "Czy muszę dać dostęp do mojego Facebooka?",
       answer:
-        "Tak, ale spokojnie - dostęp będzie tylko do części reklamowej (Business Manager). Nie mamy dostępu do Twojego prywatnego profilu ani wiadomości. Wszystko jest bezpieczne i zgodne z zasadami Facebooka.",
+        "Tak, jednak nie martw się - dostęp będzie tylko do części reklamowej (Business Manager). Nie mamy wglądu w Twój prywatny profil ani wiadomości. Wszystko jest bezpieczne i zgodne z zasadami Facebooka.",
     },
     {
       question: "Co jeśli nie będę zadowolona?",
       answer:
-        "Rozliczamy się miesięcznie, więc nie ma długich umów. Jak coś Ci nie pasuje, po prostu kończymy współpracę. Ale zwykle po pierwszym miesiącu klientki są zadowolone i zostają z nami na dłużej :)",
+        "Rozliczamy się miesięcznie, bez długoterminowych zobowiązań. Jeśli cokolwiek Ci nie pasuje, możemy zakończyć współpracę. Zwykle jednak po pierwszym miesiącu klientki są zadowolone i zostają z nami znacznie dłużej :)",
     },
     {
       question: "Czy potrzebuję profesjonalnych zdjęć?",
       answer:
-        "Pomożemy Ci z tym! Możemy wykorzystać zdjęcia, które już masz, albo podpowiemy jak zrobić dobre zdjęcia telefonem. Jeśli będzie potrzeba, znajdziemy fotografa w Twojej okolicy.",
+        "Chętnie Ci w tym pomożemy! Możemy wykorzystać zdjęcia, które już masz, lub podpowiemy jak wykonać dobre zdjęcia telefonem. Jeśli zajdzie taka potrzeba, znajdziemy dla Ciebie fotografa w Twojej okolicy.",
     },
   ];
 

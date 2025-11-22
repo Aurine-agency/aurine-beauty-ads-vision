@@ -7,28 +7,28 @@ const Process = () => {
       number: "01",
       title: "Konsultacja i strategia",
       description:
-        "Poznajemy Twój biznes, cele oraz grupę docelową. Opracowujemy strategię kampanii dopasowaną do Twoich potrzeb i budżetu.",
+        "Z uwagą poznajemy Twój biznes, cele oraz grupę docelową. Wspólnie opracowujemy strategię kampanii idealnie dopasowaną do Twoich potrzeb i budżetu.",
     },
     {
       icon: Palette,
       number: "02",
       title: "Kreacje reklamowe",
       description:
-        "Projektujemy profesjonalne reklamy z atrakcyjnymi grafikami i przekonującymi tekstami, które wyróżnią Twój salon.",
+        "Z dbałością o każdy szczegół projektujemy profesjonalne reklamy z atrakcyjnymi grafikami i ciepłymi tekstami, które skutecznie wyróżnią Twój salon.",
     },
     {
       icon: Rocket,
       number: "03",
       title: "Uruchomienie kampanii",
       description:
-        "Konfigurujemy kampanie z precyzyjnym targetowaniem i uruchamiamy je na Facebook Ads Manager.",
+        "Profesjonalnie konfigurujemy kampanie z precyzyjnym targetowaniem i sprawnie uruchamiamy je w Facebook Ads Manager, dbając o każdy detal.",
     },
     {
       icon: LineChart,
       number: "04",
       title: "Optymalizacja i raportowanie",
       description:
-        "Na bieżąco monitorujemy wyniki, optymalizujemy budżet i dostarczamy przejrzyste raporty z rekomendacjami.",
+        "Z zaangażowaniem monitorujemy wyniki, optymalizujemy budżet i regularnie dostarczamy przejrzyste raporty z naszymi najlepszymi rekomendacjami.",
     },
   ];
 

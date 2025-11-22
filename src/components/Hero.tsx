@@ -27,8 +27,7 @@ const Hero = () => {
               <span className="text-gradient-pink glow-pink">salonu</span>
             </h1>
             <p className="text-xl text-white/70 mb-8 max-w-xl">
-              Pomagamy salonom kosmetycznym i beauty przyciągnąć więcej klientek
-              przez Facebook i Instagram. Profesjonalnie, przejrzyście i skutecznie.
+              Z pasją wspieramy salony kosmetyczne w przyciąganiu nowych klientek przez Facebook i Instagram. Profesjonalnie, przejrzyście i z sercem.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button

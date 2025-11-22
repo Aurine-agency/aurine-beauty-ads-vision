@@ -18,8 +18,7 @@ const Footer = () => {
               <span className="text-2xl font-bold text-white">Aurine</span>
             </div>
             <p className="text-white/60 mb-4 max-w-md">
-              Agencja marketingowa specjalizująca się w kampaniach Facebook Ads
-              dla branży beauty. Pomagamy salonom kosmetycznym przyciągnąć więcej klientek.
+              Specjalizujemy się w profesjonalnym prowadzeniu kampanii reklamowych dla salonów kosmetycznych. Z pasją pomagamy Ci dotrzeć do idealnych klientek.
             </p>
             <div className="flex gap-4">
               <a
@@ -70,20 +69,20 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:kontakt@aurine.pl"
+                  href="mailto:biuro@aurine.pl"
                   className="flex items-center gap-2 text-white/60 hover:text-primary transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  kontakt@aurine.pl
+                  biuro@aurine.pl
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+48123456789"
+                  href="tel:+48731856524"
                   className="flex items-center gap-2 text-white/60 hover:text-primary transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  +48 123 456 789
+                  +48 731 856 524
                 </a>
               </li>
             </ul>

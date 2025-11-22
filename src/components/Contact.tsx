@@ -13,7 +13,7 @@ const Contact = () => {
               Chcesz więcej <span className="text-gradient-pink">klientek?</span>
             </h2>
             <p className="text-xl text-white/60">
-              Napisz do nas, pogadamy bez zobowiązań
+              Porozmawiajmy bez zobowiązań - chętnie odpowiemy na Twoje pytania
             </p>
           </div>
 
@@ -23,14 +23,14 @@ const Contact = () => {
                 {
                   icon: Mail,
                   title: "Email",
-                  value: "kontakt@aurine.pl",
-                  href: "mailto:kontakt@aurine.pl",
+                  value: "biuro@aurine.pl",
+                  href: "mailto:biuro@aurine.pl",
                 },
                 {
                   icon: Phone,
                   title: "Telefon",
-                  value: "+48 123 456 789",
-                  href: "tel:+48123456789",
+                  value: "+48 731 856 524",
+                  href: "tel:+48731856524",
                 },
                 {
                   icon: MessageCircle,
@@ -57,7 +57,7 @@ const Contact = () => {
 
             <div className="text-center">
               <a
-                href="mailto:kontakt@aurine.pl"
+                href="mailto:biuro@aurine.pl"
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.6)]"
               >
                 <Mail className="w-5 h-5" />
@@ -69,7 +69,7 @@ const Contact = () => {
           {/* Footer */}
           <div className="mt-16 text-center text-white/40 text-sm">
             <p>© 2024 Aurine. Wszystkie prawa zastrzeżone.</p>
-            <p className="mt-2">Specjaliści Facebook Ads dla branży beauty</p>
+            <p className="mt-2">Z pasją wspieramy salony kosmetyczne w rozwoju</p>
           </div>
         </div>
       </div>

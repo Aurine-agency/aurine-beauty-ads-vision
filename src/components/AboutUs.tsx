@@ -20,8 +20,7 @@ const AboutUs = () => {
             dla <span className="text-gradient-pink">branży beauty</span>
           </h2>
           <p className="text-xl text-white/60 max-w-3xl mx-auto leading-relaxed">
-            Nie jesteśmy kolejną agencją "do wszystkiego". Robimy jedno, ale robimy to doskonale
-            – kampanie Facebook Ads dla salonów kosmetycznych.
+            Nie jesteśmy kolejną agencją oferującą wszystko. Specjalizujemy się w jednym, ale robimy to z pasją i doskonałością – kampanie Facebook Ads dla salonów kosmetycznych.
           </p>
         </div>
 
@@ -34,13 +33,10 @@ const AboutUs = () => {
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">Nasza misja</h3>
             <p className="text-white/80 leading-relaxed mb-4">
-              Większość agencji tworzy kampanie, które wyglądają ładnie, ale nie przynoszą
-              zapisów na wizyty. My podeszliśmy do tego inaczej.
+              Większość agencji tworzy kampanie, które wyglądają atrakcyjnie wizualnie, ale nie przekładają się na realne zapisy na wizyty. My podeszliśmy do tego inaczej.
             </p>
             <p className="text-white/80 leading-relaxed">
-              Skupiamy się wyłącznie na branży beauty, dzięki czemu rozumiemy specyfikę
-              Waszego biznesu. Wiemy, co przemawia do klientek i jak przekształcić
-              zainteresowanie w konkretne rezerwacje.
+              Skupiamy się wyłącznie na branży beauty, dzięki czemu dogłębnie rozumiemy specyfikę Waszego biznesu. Wiemy, co przemawia do klientek i jak skutecznie przekształcić ich zainteresowanie w konkretne rezerwacje.
             </p>
           </div>
 
@@ -51,13 +47,10 @@ const AboutUs = () => {
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">Nasze doświadczenie</h3>
             <p className="text-white/80 leading-relaxed mb-4">
-              Przez ostatnie lata współpracowaliśmy z dziesiątkami salonów w całej Polsce
-              – od małych miejscowości po większe miasta.
+              Przez ostatnie lata z zaangażowaniem współpracowaliśmy z dziesiątkami salonów w całej Polsce – od niewielkich miejscowości po większe miasta.
             </p>
             <p className="text-white/80 leading-relaxed">
-              Każda kampania jest projektowana indywidualnie, bo wiemy, że każdy salon
-              ma swoją unikalną ofertę i grupę docelową. Nie stosujemy schematów
-              – tworzymy rozwiązania szyte na miarę.
+              Każda kampania jest projektowana indywidualnie, bo rozumiemy, że każdy salon ma swoją unikalną ofertę i grupę docelową. Nie stosujemy gotowych schematów – tworzymy przemyślane rozwiązania dopasowane do Twoich potrzeb.
             </p>
           </div>
         </div>
@@ -71,15 +64,15 @@ const AboutUs = () => {
             {[
               {
                 title: "Autentyczność",
-                description: "Mówimy wprost. Jeśli coś nie zadziała, usłyszysz o tym od razu, nie po miesiącach.",
+                description: "Mówimy wprost i szczerze. Jeśli coś wymaga korekty, informujemy o tym od razu, bez zbędnego opóźniania.",
               },
               {
                 title: "Efektywność",
-                description: "Każda złotówka z Twojego budżetu musi pracować. Nie marnujemy pieniędzy na testy bez sensu.",
+                description: "Każda złotówka z Twojego budżetu musi pracować. Prowadzimy kampanie przemyślanie, bez niepotrzebnych eksperymentów.",
               },
               {
                 title: "Partnerstwo",
-                description: "Traktujemy Twój biznes jak własny. Twój sukces to nasz sukces – tak to widzimy.",
+                description: "Z zaangażowaniem traktujemy Twój biznes jak własny. Twój sukces to nasz wspólny cel i satysfakcja.",
               },
             ].map((value, index) => (
               <div

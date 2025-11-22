@@ -41,7 +41,7 @@ const Results = () => {
             Co możesz <span className="text-gradient-pink">zyskać?</span>
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Konkretne liczby z naszych kampanii
+            Realne liczby z kampanii, które prowadzimy
           </p>
         </div>
 
@@ -70,12 +70,12 @@ const Results = () => {
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "Znamy branżę beauty od podszewki",
-              "Zawsze wiesz co się dzieje i za co płacisz",
-              "Rozliczamy się miesięcznie, bez długich umów",
-              "Jesteśmy na telefon, jak coś jest niejasne",
-              "Nie marnujemy Twoich pieniędzy",
-              "Pomagamy też ze zdjęciami i tekstami",
+              "Z pasją poznajemy specyfikę branży beauty",
+              "Transparentność – zawsze wiesz co się dzieje i za co płacisz",
+              "Elastyczność – rozliczamy się miesięcznie, bez długoterminowych zobowiązań",
+              "Dostępność – jesteśmy zawsze na telefon, gdy masz pytania",
+              "Odpowiedzialność – dbamy o efektywne wykorzystanie Twojego budżetu",
+              "Wsparcie – pomagamy również ze zdjęciami i tekstami reklamowymi",
             ].map((benefit, index) => (
               <div
                 key={index}

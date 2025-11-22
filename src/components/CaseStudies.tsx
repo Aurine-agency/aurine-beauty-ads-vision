@@ -19,7 +19,7 @@ const CaseStudies = () => {
         roi: "ROI 3.2x",
         period: "Pierwsze 2 miesiące",
       },
-      testimonial: "Nie spodziewałam się tak szybkich efektów. Już w drugim tygodniu kalendarz zaczął się zapełniać. Aurine pomogło mi wystartować z biznesem.",
+      testimonial: "Nie spodziewałam się tak szybkich efektów. Już w drugim tygodniu kalendarz zaczął się wypełniać. Zespół Aurine pomógł mi profesjonalnie wystartować z biznesem i czuję, że mogę na nich polegać.",
       image: caseChart1,
       stats: [
         { icon: Users, label: "Nowe klientki", value: "32" },
@@ -38,7 +38,7 @@ const CaseStudies = () => {
         roi: "ROI 4.1x",
         period: "3 miesiące zimowe",
       },
-      testimonial: "Zima zawsze była trudnym okresem. Dzięki kampanii Aurine pierwszy raz miałam pełen grafik również w styczniu i lutym. To zmieniło postrzeganie mojego biznesu.",
+      testimonial: "Zima zawsze była trudnym okresem. Dzięki kampanii prowadzonej przez Aurine pierwszy raz miałam pełen grafik również w styczniu i lutym. To całkowicie zmieniło sposób, w jaki postrzegam rozwój mojego biznesu.",
       image: caseChart2,
       stats: [
         { icon: Users, label: "Nowe klientki", value: "45" },
@@ -57,7 +57,7 @@ const CaseStudies = () => {
         roi: "ROI 3.8x",
         period: "2 miesiące",
       },
-      testimonial: "W małym mieście jest kilka salonów. Myślałam, że ciężko będzie się przebić. Kampania Aurine pokazała, że profesjonalne podejście robi różnicę. Teraz jestem pierwszym wyborem.",
+      testimonial: "W małym mieście jest kilka salonów. Myślałam, że ciężko będzie się wyróżnić. Kampania prowadzona przez Aurine pokazała, że profesjonalne podejście naprawdę robi różnicę. Teraz jestem pierwszym wyborem moich klientek.",
       image: beforeAfter,
       stats: [
         { icon: Users, label: "Nowe klientki", value: "28" },
@@ -81,7 +81,7 @@ const CaseStudies = () => {
             Prawdziwe <span className="text-gradient-pink">sukcesy</span>
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Konkretne przykłady kampanii, które przeprowadziliśmy
+            Konkretne przykłady kampanii, które z pasją przeprowadziliśmy
           </p>
         </div>
 

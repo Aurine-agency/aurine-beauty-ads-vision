@@ -45,12 +45,12 @@ const AboutUs = () => {
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/30 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
               <Heart className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nasze podejście</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Jak pracujemy</h3>
             <p className="text-white/80 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-              Studiowaliśmy kampanie setek salonów, analizowaliśmy co działa, a co nie. Zdobyliśmy certyfikaty Facebook Ads i nauczyliśmy się tego na własnych kampaniach.
+              Znamy specyfikę branży beauty i wiemy, jak dotrzeć do kobiet szukających usług kosmetycznych. Rozumiemy, czego potrzebują właścicielki salonów w małych miastach.
             </p>
             <p className="text-white/80 leading-relaxed text-sm sm:text-base">
-              Do każdej współpracy podchodzimy indywidualnie. Nie stosujemy szablonów – bo Twój salon i Twoje miasto są unikalne. Tworzymy kampanie idealnie dopasowane do Ciebie.
+              Każda kampania jest dopasowana indywidualnie – nie ma u nas szablonów. Twój salon, Twoje miasto i Twoja sytuacja są unikalne, więc tak właśnie traktujemy każdą współpracę.
             </p>
           </div>
         </div>

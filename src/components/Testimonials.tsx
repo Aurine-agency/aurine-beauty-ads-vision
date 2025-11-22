@@ -46,7 +46,7 @@ const Testimonials = () => {
 
   const renderStars = (rating: number) => {
     return Array.from({ length: rating }).map((_, i) => (
-      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
     ));
   };
 
@@ -96,22 +96,25 @@ const Testimonials = () => {
                     : "opacity-0 translate-x-full"
                 }`}
               >
-                <div className="relative bg-gradient-to-br from-[#1a1a1a] via-[#1f1a1d] to-[#1a1a1a] backdrop-blur-md rounded-[2rem] p-10 md:p-14 border border-gray-800/40">
-                  <div className="flex items-center justify-center gap-1 mb-8">
-                    {renderStars(testimonial.rating)}
-                  </div>
+                <div className="relative rounded-[2rem] border border-white/10 bg-black/70 backdrop-blur-md shadow-[0_0_40px_hsl(328,100%,54%/0.18)] px-10 py-12 md:px-16 md:py-14 overflow-hidden">
+                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_hsl(328,100%,54%/0.18),transparent_55%)]" />
+                  <div className="relative z-10">
+                    <div className="flex items-center justify-center gap-1 mb-8">
+                      {renderStars(testimonial.rating)}
+                    </div>
 
-                  <p className="text-white text-center mb-12 text-lg md:text-xl leading-relaxed font-light">
-                    "{testimonial.text}"
-                  </p>
+                    <p className="text-white text-center mb-12 text-lg md:text-xl leading-relaxed font-light">
+                      "{testimonial.text}"
+                    </p>
 
-                  <div className="pt-6 border-t border-gray-700/40 text-center">
-                    <p className="text-white font-semibold text-lg mb-1">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-gray-500 text-sm">
-                      {testimonial.business}
-                    </p>
+                    <div className="pt-6 border-t border-white/10 text-center">
+                      <p className="text-white font-semibold text-lg mb-1">
+                        {testimonial.name}
+                      </p>
+                      <p className="text-gray-400 text-sm">
+                        {testimonial.business}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

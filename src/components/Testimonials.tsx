@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Star, Quote } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -67,7 +67,23 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto relative">
+          <button
+            onClick={() => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-30 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+
+          <button
+            onClick={() => setCurrentIndex((prev) => (prev + 1) % testimonials.length)}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-30 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+
           <div className="relative min-h-[400px]">
             {testimonials.map((testimonial, index) => (
               <div
@@ -80,20 +96,16 @@ const Testimonials = () => {
                     : "opacity-0 translate-x-full"
                 }`}
               >
-                <div className="relative bg-gradient-to-br from-gray-900/80 via-gray-900/60 to-black/70 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-primary/80 shadow-2xl shadow-primary/20">
-                  <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center transform rotate-12">
-                    <Quote className="w-8 h-8 text-white transform -rotate-12" />
-                  </div>
-
-                  <div className="flex items-center justify-center gap-1 mb-6 mt-4">
+                <div className="relative bg-black/70 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-gray-800/50">
+                  <div className="flex items-center justify-center gap-1 mb-8">
                     {renderStars(testimonial.rating)}
                   </div>
 
-                  <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+                  <p className="text-white text-center mb-10 text-lg md:text-xl leading-relaxed">
                     "{testimonial.text}"
                   </p>
 
-                  <div className="pt-6 border-t border-gray-700/50">
+                  <div className="pt-8 border-t border-gray-700/30 text-center">
                     <p className="text-white font-semibold text-xl mb-1">
                       {testimonial.name}
                     </p>

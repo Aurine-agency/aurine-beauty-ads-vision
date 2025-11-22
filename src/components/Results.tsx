@@ -38,10 +38,10 @@ const Results = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Co możesz <span className="text-gradient-pink">zyskać?</span>
+            Co możesz <span className="text-gradient-pink">zyskać</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Konkretne liczby z kampanii, które prowadzimy
+            Konkretne efekty, które zobaczysz w swoim salonie
           </p>
         </div>
 
@@ -70,12 +70,12 @@ const Results = () => {
           </h3>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {[
-              "Specjalizacja tylko w branży beauty",
-              "Pełna transparentność – wiesz za co płacisz",
-              "Rozliczenia miesięczne, bez długich umów",
-              "Zawsze jesteśmy dostępni, gdy masz pytania",
-              "Dbamy o efektywne wykorzystanie budżetu",
-              "Pomagamy ze zdjęciami i tekstami reklamowymi",
+              "Pracujemy tylko z salonami kosmetycznymi – to nasza specjalizacja",
+              "Wiesz dokładnie, za co płacisz i jakie są efekty",
+              "Rozliczamy się miesięcznie – bez długich umów, które wiążą na lata",
+              "Jesteśmy dostępni – możesz do nas napisać lub zadzwonić w każdej chwili",
+              "Nie wydajemy Twoich pieniędzy na oślep – dbamy o każdą złotówkę",
+              "Pomagamy ze zdjęciami i tekstami – nie musisz być ekspertem od reklam",
             ].map((benefit, index) => (
               <div
                 key={index}

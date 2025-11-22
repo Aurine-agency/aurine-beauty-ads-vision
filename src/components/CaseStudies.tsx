@@ -19,7 +19,7 @@ const CaseStudies = () => {
         roi: "ROI 3.2x",
         period: "Pierwsze 2 miesiące",
       },
-      testimonial: "Nie spodziewałam się tak szybkich efektów. Już w drugim tygodniu kalendarz zaczął się wypełniać. Zespół Aurine pomógł mi profesjonalnie wystartować z biznesem i czuję, że mogę na nich polegać.",
+      testimonial: "Nie spodziewałam się, że tak szybko zobaczę efekty. Już w drugim tygodniu zaczęły dzwonić kobiety z mojego miasta i okolic. Aurine naprawdę wie, co robi i mogę na nich polegać.",
       image: caseChart1,
       stats: [
         { icon: Users, label: "Nowe klientki", value: "32" },
@@ -38,7 +38,7 @@ const CaseStudies = () => {
         roi: "ROI 4.1x",
         period: "3 miesiące zimowe",
       },
-      testimonial: "Zima zawsze była trudnym okresem. Dzięki kampanii prowadzonej przez Aurine pierwszy raz miałam pełen grafik również w styczniu i lutym. To całkowicie zmieniło sposób, w jaki postrzegam rozwój mojego biznesu.",
+      testimonial: "Zima zawsze była ciężka – połowa terminów pusta. Dzięki Aurine pierwszy raz miałam pełen grafik w styczniu i lutym. Nie wierzę, że to możliwe w tak małym mieście. Naprawdę działa!",
       image: caseChart2,
       stats: [
         { icon: Users, label: "Nowe klientki", value: "45" },
@@ -57,7 +57,7 @@ const CaseStudies = () => {
         roi: "ROI 3.8x",
         period: "2 miesiące",
       },
-      testimonial: "W małym mieście jest kilka salonów. Myślałam, że ciężko będzie się wyróżnić. Kampania prowadzona przez Aurine pokazała, że profesjonalne podejście naprawdę robi różnicę. Teraz jestem pierwszym wyborem moich klientek.",
+      testimonial: "W małym mieście jest kilka innych salonów. Myślałam, że ciężko będzie się przebić. Kampania pokazała, że profesjonalne podejście naprawdę robi różnicę – teraz klientki przychodzą właśnie do mnie.",
       image: beforeAfter,
       stats: [
         { icon: Users, label: "Nowe klientki", value: "28" },
@@ -78,10 +78,10 @@ const CaseStudies = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Prawdziwe <span className="text-gradient-pink">sukcesy</span>
+            Prawdziwe <span className="text-gradient-pink">historie</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Przykłady kampanii, które przeprowadziliśmy
+            Salony z małych miast, którym pomogliśmy – może Twój będzie następny
           </p>
         </div>
 

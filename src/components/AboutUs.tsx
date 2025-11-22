@@ -15,12 +15,12 @@ const AboutUs = () => {
             <span className="text-primary font-semibold text-sm sm:text-base">O Aurine</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Agencja stworzona
+            Agencja dla salonów
             <br />
-            dla <span className="text-gradient-pink">branży beauty</span>
+            w <span className="text-gradient-pink">małych miastach</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Specjalizujemy się wyłącznie w kampaniach Facebook Ads dla salonów kosmetycznych. Jedno zadanie, wykonane perfekcyjnie.
+            Wiemy, jak to jest prowadzić salon poza dużym miastem. Pomagamy właścicielkom salonów kosmetycznych przyciągnąć klientki z okolicy – szczerze, bez obietnic bez pokrycia.
           </p>
         </div>
 
@@ -33,10 +33,10 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nasza misja</h3>
             <p className="text-white/80 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-              Większość agencji tworzy ładne reklamy, które nie przekładają się na rezerwacje. My działamy inaczej.
+              Wierzymy, że każdy salon – niezależnie od tego, czy jest w dużym mieście, czy w małej miejscowości – zasługuje na pełen terminarz.
             </p>
             <p className="text-white/80 leading-relaxed text-sm sm:text-base">
-              Koncentrujemy się tylko na salonach kosmetycznych, dzięki czemu dokładnie wiemy, jak skutecznie przekształcić zainteresowanie w umówione wizyty.
+              Skupiamy się na salonach w mniejszych miejscowościach, ponieważ wiemy, że tam reklamy online mogą zdziałać cuda. Lokalna konkurencja często nie prowadzi kampanii albo robi to nieskutecznie – a my pomagamy Ci to wykorzystać.
             </p>
           </div>
 
@@ -47,10 +47,10 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nasze doświadczenie</h3>
             <p className="text-white/80 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
-              Przez ostatnie lata współpracowaliśmy z dziesiątkami salonów w całej Polsce – od małych miejscowości po duże miasta.
+              Przez ostatnie lata współpracowaliśmy z salonami w całej Polsce – szczególnie z mniejszych miejscowości, gdzie reklamy online działają wyjątkowo dobrze.
             </p>
             <p className="text-white/80 leading-relaxed text-sm sm:text-base">
-              Każda kampania jest projektowana indywidualnie. Nie stosujemy szablonów – tworzymy rozwiązania dopasowane do Twojego salonu.
+              Do każdej współpracy podchodzimy indywidualnie. Nie stosujemy szablonów – bo Twój salon i Twoje miasto są unikalne. Tworzymy kampanie idealnie dopasowane do Ciebie.
             </p>
           </div>
         </div>
@@ -63,16 +63,16 @@ const AboutUs = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
-                title: "Transparentność",
-                description: "Wiesz dokładnie, za co płacisz i jakie efekty osiągasz. Bez ukrytych kosztów.",
+                title: "Szczerość",
+                description: "Mówimy wprost, bez ściemy. Zawsze wiesz, co się dzieje z Twoją kampanią i na co idą pieniądze.",
               },
               {
-                title: "Efektywność",
-                description: "Każda złotówka z budżetu musi pracować. Prowadzimy kampanie rozważnie.",
+                title: "Efekty",
+                description: "Liczy się to, co faktycznie widzisz – więcej telefonów, pełniejszy terminarz, zadowolone klientki.",
               },
               {
-                title: "Partnerstwo",
-                description: "Traktujemy Twój biznes jak własny. Twój sukces to nasz wspólny cel.",
+                title: "Wsparcie",
+                description: "Nie zostawiamy Cię samej. Jesteśmy na telefon, pomagamy i szybko reagujemy na Twoje potrzeby.",
               },
             ].map((value, index) => (
               <div

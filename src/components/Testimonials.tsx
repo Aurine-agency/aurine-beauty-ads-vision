@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Star, Quote } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,6 +35,12 @@ const Testimonials = () => {
       text: "Mega konkretna ekipa! Wszystko jest przejrzyste, wiem ile wydaję i co z tego mam. Kampanie przynoszą efekty, a kontakt jest świetny. Najlepsza decyzja dla mojego salonu!",
       rating: 5,
     },
+    {
+      name: "Anna Wiśniewska",
+      business: "Salon Beauty - Płońsk",
+      text: "Wreszcie mogę się skupić na tym, co robię najlepiej – pracy z klientkami. Aurine zajmuje się wszystkim: reklamami, grafikami, tekstami. Regularnie dostaję raporty i wiem dokładnie, za co płacę. Profesjonalizm na najwyższym poziomie.",
+      rating: 5,
+    },
   ];
 
   useEffect(() => {
@@ -46,17 +52,20 @@ const Testimonials = () => {
 
   const renderStars = (rating: number) => {
     return Array.from({ length: rating }).map((_, i) => (
-      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+      <Star key={i} className="w-6 h-6 fill-[#E91E63] text-[#E91E63]" />
     ));
   };
 
-  return (
-    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-primary/40 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-secondary/40 rounded-full blur-3xl"></div>
-      </div>
+  const handlePrevious = () => {
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
 
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+  };
+
+  return (
+    <section className="py-20 bg-black relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -67,7 +76,23 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto relative">
+          <button
+            onClick={handlePrevious}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 z-20 w-12 h-12 rounded-full bg-gray-800 border border-gray-700 hover:bg-gray-700 transition-all flex items-center justify-center group"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
+          </button>
+
+          <button
+            onClick={handleNext}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-16 z-20 w-12 h-12 rounded-full bg-gray-800 border border-gray-700 hover:bg-gray-700 transition-all flex items-center justify-center group"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
+          </button>
+
           <div className="relative min-h-[400px]">
             {testimonials.map((testimonial, index) => (
               <div
@@ -80,24 +105,20 @@ const Testimonials = () => {
                     : "opacity-0 translate-x-full"
                 }`}
               >
-                <div className="relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-primary shadow-2xl shadow-primary/20">
-                  <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center transform rotate-12">
-                    <Quote className="w-8 h-8 text-white transform -rotate-12" />
-                  </div>
-
-                  <div className="flex items-center gap-1 mb-6 mt-4">
+                <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-8 md:p-12 border border-gray-800">
+                  <div className="flex justify-center items-center gap-1 mb-8">
                     {renderStars(testimonial.rating)}
                   </div>
 
-                  <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+                  <p className="text-gray-300 mb-10 text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto">
                     "{testimonial.text}"
                   </p>
 
-                  <div className="pt-6 border-t border-gray-700/50">
+                  <div className="text-center pt-8 border-t border-gray-700/50">
                     <p className="text-white font-semibold text-xl mb-1">
                       {testimonial.name}
                     </p>
-                    <p className="text-gray-400">
+                    <p className="text-gray-500 text-sm">
                       {testimonial.business}
                     </p>
                   </div>
@@ -111,10 +132,10 @@ const Testimonials = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`h-2 rounded-full transition-all duration-300 ${
                   idx === currentIndex
-                    ? "bg-primary w-8"
-                    : "bg-gray-600 hover:bg-gray-500"
+                    ? "bg-[#E91E63] w-8"
+                    : "bg-gray-700 hover:bg-gray-600 w-2"
                 }`}
                 aria-label={`Go to testimonial ${idx + 1}`}
               />

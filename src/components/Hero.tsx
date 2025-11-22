@@ -16,9 +16,9 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(328,100%,70%/0.1),transparent_50%)]" />
 
       <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 relative z-10">
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left column - Text content */}
-          <div className="text-left animate-fade-in-up">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Text content */}
+          <div className="text-left animate-fade-in-up lg:order-1">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Więcej klientek
               <br />
@@ -29,33 +29,35 @@ const Hero = () => {
             <p className="text-lg sm:text-xl text-white/70 mb-8 max-w-xl">
               Skuteczne kampanie reklamowe na Facebook i Instagram, które przyciągają nowe klientki do Twojego salonu kosmetycznego. Bez zbędnych kosztów, z pełną transparentnością.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={scrollToContact}
-                className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.6)]"
-              >
-                Porozmawiajmy
-              </button>
-              <button
-                onClick={() => {
-                  const element = document.getElementById("services");
-                  element?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="border-2 border-white/20 hover:border-primary text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:bg-white/5"
-              >
-                Zobacz co robimy
-              </button>
-            </div>
           </div>
 
-          {/* Right column - Visual */}
-          <div className="relative animate-scale-in">
+          {/* Visual */}
+          <div className="relative animate-scale-in w-full lg:order-2">
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
             <img
               src={analyticsVisual}
               alt="Facebook Ads Analytics"
               className="relative w-full h-auto rounded-2xl"
             />
+          </div>
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 w-full lg:order-3 lg:col-span-2 justify-center lg:justify-start">
+            <button
+              onClick={scrollToContact}
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.6)]"
+            >
+              Porozmawiajmy
+            </button>
+            <button
+              onClick={() => {
+                const element = document.getElementById("services");
+                element?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="border-2 border-white/20 hover:border-primary text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:bg-white/5"
+            >
+              Zobacz co robimy
+            </button>
           </div>
         </div>
 

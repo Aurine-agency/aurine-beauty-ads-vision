@@ -5,30 +5,30 @@ const Process = () => {
     {
       icon: MessageSquare,
       number: "01",
-      title: "Konsultacja i strategia",
+      title: "Rozmowa bez zobowiązań",
       description:
-        "Rozmawiamy o Twoim salonie, usługach i celach. Ustalamy budżet reklamowy i określamy, jak będzie wyglądała współpraca. Wszystko jasne i bez ukrytych kosztów.",
+        "Rozmawiamy o Twoim salonie, co chcesz osiągnąć i jaki masz budżet. Wszystko jest jasne i proste – bez ukrytych kosztów czy niejasności. Po prostu szczera rozmowa.",
     },
     {
       icon: Palette,
       number: "02",
-      title: "Kreacje reklamowe",
+      title: "Przygotowanie reklam",
       description:
-        "Projektujemy profesjonalne grafiki i piszemy teksty reklamowe. Przygotowujemy kilka wariantów reklam, które przetestujemy, aby znaleźć najskuteczniejsze połączenie.",
+        "Projektujemy grafiki i teksty do reklam. Przygotowujemy kilka wersji, żeby przetestować, co zadziała najlepiej. Możesz być spokojna – wszystko będzie wyglądało profesjonalnie.",
     },
     {
       icon: Rocket,
       number: "03",
-      title: "Uruchomienie kampanii",
+      title: "Uruchomienie",
       description:
-        "Konfigurujemy precyzyjne targetowanie w Facebook Ads Manager i uruchamiamy kampanie. Od tego momentu Twoje reklamy zaczynają docierać do potencjalnych klientek.",
+        "Ustawiamy kampanię tak, żeby dotrzeć do właściwych osób w Twojej okolicy. Od tego momentu Twoje reklamy zaczynają działać – kobiety z Twojego miasta i okolic zobaczą Twoją ofertę.",
     },
     {
       icon: LineChart,
       number: "04",
-      title: "Optymalizacja i raportowanie",
+      title: "Dbamy o wyniki",
       description:
-        "Codziennie sprawdzamy wyniki i wprowadzamy poprawki. Co tydzień wysyłamy raport z najważniejszymi danymi i rekomendacjami na kolejny okres.",
+        "Codziennie sprawdzamy, co działa i wprowadzamy poprawki. Co tydzień dostajesz prosty raport – bez skomplikowanych liczb, tylko najważniejsze informacje i to, co faktycznie się wydarzyło.",
     },
   ];
 
@@ -43,10 +43,10 @@ const Process = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Jak to <span className="text-gradient-pink">działa?</span>
+            Jak to <span className="text-gradient-pink">wygląda</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Prosty, przejrzysty proces od pierwszej rozmowy do efektów
+            Proste kroki – bez zbędnych komplikacji i branżowego bełkotu
           </p>
         </div>
 

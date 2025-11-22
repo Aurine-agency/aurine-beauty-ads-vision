@@ -27,7 +27,7 @@ const Hero = () => {
               <span className="text-gradient-pink glow-pink">salonu</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/70 mb-8 max-w-xl">
-              Skuteczne kampanie reklamowe na Facebook i Instagram, które przyciągają nowe klientki do Twojego salonu kosmetycznego. Bez zbędnych kosztów, z pełną transparentnością.
+              Pomagamy salonom kosmetycznym w małych miastach przyciągać nowe klientki przez reklamy na Facebooku i Instagramie. Stawiamy na szczerość, prostotę i realne efekty – bez obietnic bez pokrycia.
             </p>
           </div>
 

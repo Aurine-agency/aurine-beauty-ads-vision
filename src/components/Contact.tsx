@@ -69,7 +69,7 @@ const Contact = () => {
           {/* Footer */}
           <div className="mt-12 sm:mt-16 text-center text-white/40 text-xs sm:text-sm px-4">
             <p>© 2024 Aurine. Wszystkie prawa zastrzeżone.</p>
-            <p className="mt-2">Skuteczne kampanie dla salonów kosmetycznych</p>
+            <p className="mt-2">Reklamy, które naprawdę działają – dla salonów w małych miastach</p>
           </div>
         </div>
       </div>

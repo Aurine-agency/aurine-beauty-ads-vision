@@ -8,7 +8,7 @@ const FAQ = () => {
     {
       question: "Ile to kosztuje?",
       answer:
-        "Zależy to od Twojego budżetu reklamowego i celów, które chcesz osiągnąć. Zazwyczaj startujemy od 1500-2000 zł miesięcznie (budżet reklamowy + nasza obsługa). Najlepiej po prostu porozmawiać - wtedy wszystko stanie się jasne.",
+        "Do każdej współpracy podchodzimy indywidualnie. Koszt zależy od Twojego budżetu reklamowego i celów, które chcesz osiągnąć. Nie ma tu sztywnych pakietów - dostosowujemy się do możliwości salonu. Najlepiej po prostu porozmawiać, wtedy wszystko stanie się jasne i ustalimy warunki idealnie dopasowane do Ciebie.",
     },
     {
       question: "Jak długo trzeba czekać na efekty?",

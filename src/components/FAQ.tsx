@@ -6,9 +6,9 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "Jak ustalamy cenę współpracy?",
+      question: "Ile to kosztuje?",
       answer:
-        "Każdy salon jest inny, dlatego podchodzimy do każdego klienta indywidualnie. Cena zależy od Twojego budżetu, celów i zakresu kampanii. Podczas pierwszej konsultacji omówimy Twoją sytuację i stworzymy ofertę dopasowaną do Twoich potrzeb i możliwości.",
+        "To zależy od Twojego budżetu reklamowego i tego, co chcesz osiągnąć. Zazwyczaj startujemy od 1500-2000 zł miesięcznie (budżet + nasza obsługa). Najlepiej po prostu pogadać, wtedy wszystko będzie jasne.",
     },
     {
       question: "Jak długo trzeba czekać na efekty?",

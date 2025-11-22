@@ -6,33 +6,15 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Anna Kowalska",
-      business: "Salon Piękności 'Metamorfoza' - Kielce",
-      text: "Współpraca z Aurine to strzał w dziesiątkę! W miesiąc mieliśmy 23 nowe klientki z Facebooka. Dziewczyny są super kontaktowe i zawsze wiedzą co robią. Polecam z całego serca!",
-      rating: 5,
-    },
-    {
-      name: "Magdalena Wiśniewska",
-      business: "Studio Urody 'Bella' - Radom",
-      text: "Nigdy nie myślałam, że reklamy mogą tak działać. Po 3 miesiącach współpracy mój kalendarz jest pełny na 2 tygodnie do przodu. To najlepsza inwestycja w mój biznes!",
-      rating: 5,
-    },
-    {
       name: "Katarzyna Nowak",
-      business: "Beauty Room 'Glow' - Siedlce",
-      text: "Profesjonalizm na najwyższym poziomie. Dokładnie wiedzą co robią, reklamy są przepiękne, a efekty przeszły moje oczekiwania. W końcu mam stabilny przepływ nowych klientek!",
+      business: "Studio Urody - Mława",
+      text: "Współpraca z Aurine to był strzał w dziesiątkę. Pierwszy miesiąc przyniósł 18 nowych klientek, które znalazły mnie przez Facebook. Teraz mój kalendarz jest pełny, a ja mogę się skupić na pracy, którą kocham. Dziewczyny z Aurine zawsze są dostępne i wszystko tłumaczą w prosty sposób.",
       rating: 5,
     },
     {
-      name: "Joanna Lewandowska",
-      business: "Salon 'Beauty Lab' - Tarnów",
-      text: "Po 2 miesiącach współpracy miałam problem... zbyt dużo rezerwacji! Musiałam zatrudnić dodatkową osobę. Dzięki Aurine mój salon wreszcie działa na pełnych obrotach.",
-      rating: 5,
-    },
-    {
-      name: "Paulina Dąbrowska",
-      business: "Gabinet 'Perła' - Płock",
-      text: "Mega konkretna ekipa! Wszystko jest przejrzyste, wiem ile wydaję i co z tego mam. Kampanie przynoszą efekty, a kontakt jest świetny. Najlepsza decyzja dla mojego salonu!",
+      name: "Magdalena Kowalska",
+      business: "Gabinet Kosmetyczny - Ostrów Mazowiecka",
+      text: "Na początku miałam wątpliwości, czy reklamy na Facebooku sprawdzą się w małym mieście. Po trzech miesiącach współpracy muszę przyznać, że to była najlepsza inwestycja w mój biznes. Telefon nie przestaje dzwonić, a większość nowych klientek zostaje ze mną na stałe.",
       rating: 5,
     },
     {
@@ -41,108 +23,111 @@ const Testimonials = () => {
       text: "Wreszcie mogę się skupić na tym, co robię najlepiej – pracy z klientkami. Aurine zajmuje się wszystkim: reklamami, grafikami, tekstami. Regularnie dostaję raporty i wiem dokładnie, za co płacę. Profesjonalizm na najwyższym poziomie.",
       rating: 5,
     },
+    {
+      name: "Joanna Lewandowska",
+      business: "Salon Piękności - Ciechanów",
+      text: "Kampanie prowadzone przez Aurine przyniosły mi nie tylko nowe klientki, ale także pomogły zbudować rozpoznawalność salonu w okolicy. Po pół roku współpracy mogę śmiało powiedzieć, że to najlepsza decyzja biznesowa, jaką podjęłam.",
+      rating: 5,
+    },
+    {
+      name: "Monika Zielińska",
+      business: "Gabinet Kosmetologii - Przasnysz",
+      text: "Aurine naprawdę rozumie potrzeby małych salonów. Nie próbują wciskać drogich pakietów, tylko dostosowują się do mojego budżetu. Efekty przeszły moje oczekiwania – salon jest pełny, a ja planuję zatrudnić drugą osobę do pomocy.",
+      rating: 5,
+    },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
-
-  const renderStars = (rating: number) => {
-    return Array.from({ length: rating }).map((_, i) => (
-      <Star key={i} className="w-6 h-6 fill-[#E91E63] text-[#E91E63]" />
-    ));
-  };
-
-  const handlePrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
-  const handleNext = () => {
+  const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
 
-  return (
-    <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gray-600/50 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-gray-700/50 rounded-full blur-[120px]"></div>
-      </div>
+  const prevTestimonial = () => {
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+  useEffect(() => {
+    const interval = setInterval(nextTestimonial, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <section id="testimonials" className="section-padding bg-black relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 blur-3xl rounded-full" />
+
+      <div className="container mx-auto relative z-10">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Co mówią nasze <span className="text-primary">klientki</span>
+            Opinie <span className="text-gradient-pink">klientek</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Prawdziwe historie salonów, które rozwinęły swój biznes dzięki naszym kampaniom
+          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+            Właścicielki salonów, które nam zaufały
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto relative">
-          <button
-            onClick={handlePrevious}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 z-20 w-12 h-12 rounded-full bg-gray-800 border border-gray-700 hover:bg-gray-700 transition-all flex items-center justify-center group"
-            aria-label="Previous testimonial"
-          >
-            <ChevronLeft className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
-          </button>
+        {/* Carousel */}
+        <div className="max-w-4xl mx-auto relative">
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-out"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="w-full flex-shrink-0 px-4"
+                >
+                  <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12">
+                    {/* Stars */}
+                    <div className="flex gap-1 mb-6 justify-center">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                      ))}
+                    </div>
 
-          <button
-            onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-16 z-20 w-12 h-12 rounded-full bg-gray-800 border border-gray-700 hover:bg-gray-700 transition-all flex items-center justify-center group"
-            aria-label="Next testimonial"
-          >
-            <ChevronRight className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
-          </button>
-
-          <div className="relative min-h-[400px]">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 transition-all duration-700 ${
-                  index === currentIndex
-                    ? "opacity-100 translate-x-0"
-                    : index < currentIndex
-                    ? "opacity-0 -translate-x-full"
-                    : "opacity-0 translate-x-full"
-                }`}
-              >
-                <div className="bg-gradient-to-br from-[#2a1a1f] via-[#1f1519] to-[#2a1a1f] backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-[#3a2a2f]/50 shadow-2xl">
-                  <div className="flex justify-center items-center gap-1 mb-8">
-                    {renderStars(testimonial.rating)}
-                  </div>
-
-                  <p className="text-gray-200 mb-10 text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto">
-                    "{testimonial.text}"
-                  </p>
-
-                  <div className="text-center pt-8 border-t border-gray-600/30">
-                    <p className="text-white font-semibold text-xl mb-1">
-                      {testimonial.name}
+                    {/* Review text */}
+                    <p className="text-xl text-white/90 mb-8 leading-relaxed text-center">
+                      "{testimonial.text}"
                     </p>
-                    <p className="text-gray-400 text-sm">
-                      {testimonial.business}
-                    </p>
+
+                    {/* Author */}
+                    <div className="text-center border-t border-white/10 pt-6">
+                      <div className="font-semibold text-white text-lg">
+                        {testimonial.name}
+                      </div>
+                      <div className="text-white/60">{testimonial.business}</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
+          {/* Navigation buttons */}
+          <button
+            onClick={prevTestimonial}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-12 h-12 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/50 rounded-full flex items-center justify-center transition-all"
+          >
+            <ChevronLeft className="w-6 h-6 text-white" />
+          </button>
+          <button
+            onClick={nextTestimonial}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-12 h-12 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary/50 rounded-full flex items-center justify-center transition-all"
+          >
+            <ChevronRight className="w-6 h-6 text-white" />
+          </button>
+
+          {/* Dots indicator */}
           <div className="flex justify-center gap-2 mt-8">
-            {testimonials.map((_, idx) => (
+            {testimonials.map((_, index) => (
               <button
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  idx === currentIndex
-                    ? "bg-[#E91E63] w-8"
-                    : "bg-gray-700 hover:bg-gray-600 w-2"
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2 h-2 rounded-full transition-all ${
+                  index === currentIndex
+                    ? "w-8 bg-primary"
+                    : "bg-white/30 hover:bg-white/50"
                 }`}
-                aria-label={`Go to testimonial ${idx + 1}`}
               />
             ))}
           </div>

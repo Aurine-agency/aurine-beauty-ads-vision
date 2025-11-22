@@ -5,12 +5,10 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import CaseStudies from "@/components/CaseStudies";
 import Results from "@/components/Results";
-import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -22,12 +20,10 @@ const Index = () => {
       <Process />
       <CaseStudies />
       <Results />
-      <Stats />
       <Testimonials />
       <FAQ />
       <Contact />
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 };

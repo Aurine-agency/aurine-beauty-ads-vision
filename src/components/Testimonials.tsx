@@ -67,8 +67,8 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-purple-600/50 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-pink-600/50 rounded-full blur-[120px]"></div>
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gray-600/50 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-gray-700/50 rounded-full blur-[120px]"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

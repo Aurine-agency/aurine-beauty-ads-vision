@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,13 +40,13 @@ const Testimonials = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
   const renderStars = (rating: number) => {
     return Array.from({ length: rating }).map((_, i) => (
-      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
     ));
   };
 
@@ -67,23 +67,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto relative">
-          <button
-            onClick={() => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-30 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
-            aria-label="Previous testimonial"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-
-          <button
-            onClick={() => setCurrentIndex((prev) => (prev + 1) % testimonials.length)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-30 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all"
-            aria-label="Next testimonial"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-
+        <div className="max-w-4xl mx-auto">
           <div className="relative min-h-[400px]">
             {testimonials.map((testimonial, index) => (
               <div
@@ -96,25 +80,26 @@ const Testimonials = () => {
                     : "opacity-0 translate-x-full"
                 }`}
               >
-                <div className="relative rounded-[2rem] border border-white/5 bg-gradient-to-b from-[#2a1520]/80 via-[#1a1520]/60 to-[#0f0a12]/80 px-10 py-12 md:px-16 md:py-14 overflow-hidden backdrop-blur-sm">
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
-                  <div className="relative z-10">
-                    <div className="flex items-center justify-center gap-1 mb-8">
-                      {renderStars(testimonial.rating)}
-                    </div>
+                <div className="relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-primary shadow-2xl shadow-primary/20">
+                  <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center transform rotate-12">
+                    <Quote className="w-8 h-8 text-white transform -rotate-12" />
+                  </div>
 
-                    <p className="text-white text-center mb-12 text-lg md:text-xl leading-relaxed font-normal">
-                      "{testimonial.text}"
+                  <div className="flex items-center gap-1 mb-6 mt-4">
+                    {renderStars(testimonial.rating)}
+                  </div>
+
+                  <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+                    "{testimonial.text}"
+                  </p>
+
+                  <div className="pt-6 border-t border-gray-700/50">
+                    <p className="text-white font-semibold text-xl mb-1">
+                      {testimonial.name}
                     </p>
-
-                    <div className="pt-6 border-t border-white/10 text-center">
-                      <p className="text-white font-semibold text-lg mb-1">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-gray-400 text-sm">
-                        {testimonial.business}
-                      </p>
-                    </div>
+                    <p className="text-gray-400">
+                      {testimonial.business}
+                    </p>
                   </div>
                 </div>
               </div>

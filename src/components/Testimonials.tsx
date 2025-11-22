@@ -40,7 +40,7 @@ const Testimonials = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
@@ -48,6 +48,15 @@ const Testimonials = () => {
     return Array.from({ length: rating }).map((_, i) => (
       <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
     ));
+  };
+
+  const getVisibleTestimonials = () => {
+    const visible = [];
+    for (let i = 0; i < 3; i++) {
+      const index = (currentIndex + i) % testimonials.length;
+      visible.push({ ...testimonials[index], position: i });
+    }
+    return visible;
   };
 
   return (
@@ -67,46 +76,54 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="relative min-h-[400px]">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 transition-all duration-700 ${
-                  index === currentIndex
-                    ? "opacity-100 translate-x-0"
-                    : index < currentIndex
-                    ? "opacity-0 -translate-x-full"
-                    : "opacity-0 translate-x-full"
-                }`}
-              >
-                <div className="relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-primary shadow-2xl shadow-primary/20">
-                  <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center transform rotate-12">
-                    <Quote className="w-8 h-8 text-white transform -rotate-12" />
-                  </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            {getVisibleTestimonials().map((testimonial, idx) => {
+              const isMain = testimonial.position === 1;
+              
+              return (
+                <div
+                  key={`${testimonial.name}-${idx}`}
+                  className={`transition-all duration-700 ${
+                    isMain 
+                      ? 'lg:scale-110 z-20' 
+                      : 'lg:scale-90 opacity-75'
+                  }`}
+                >
+                  <div className={`relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-3xl p-8 border transition-all duration-500 ${
+                    isMain 
+                      ? 'border-primary shadow-2xl shadow-primary/20' 
+                      : 'border-gray-700/50 hover:border-primary/30'
+                  }`}>
+                    <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center transform rotate-12">
+                      <Quote className="w-8 h-8 text-white transform -rotate-12" />
+                    </div>
 
-                  <div className="flex items-center gap-1 mb-6 mt-4">
-                    {renderStars(testimonial.rating)}
-                  </div>
+                    <div className="flex items-center gap-1 mb-6 mt-4">
+                      {renderStars(testimonial.rating)}
+                    </div>
 
-                  <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-                    "{testimonial.text}"
-                  </p>
-
-                  <div className="pt-6 border-t border-gray-700/50">
-                    <p className="text-white font-semibold text-xl mb-1">
-                      {testimonial.name}
+                    <p className={`text-gray-300 mb-8 leading-relaxed ${
+                      isMain ? 'text-lg' : 'text-base'
+                    }`}>
+                      "{testimonial.text}"
                     </p>
-                    <p className="text-gray-400">
-                      {testimonial.business}
-                    </p>
+
+                    <div className="pt-6 border-t border-gray-700/50">
+                      <p className="text-white font-semibold text-lg mb-1">
+                        {testimonial.name}
+                      </p>
+                      <p className="text-gray-400 text-sm">
+                        {testimonial.business}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-2 mt-12">
             {testimonials.map((_, idx) => (
               <button
                 key={idx}

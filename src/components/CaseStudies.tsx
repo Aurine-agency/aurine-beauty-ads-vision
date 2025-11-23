@@ -109,11 +109,11 @@ const CaseStudies = () => {
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-start">
             {/* Left column - Image and stats */}
             <div className="space-y-6 animate-fade-in">
-              <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden">
+              <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-primary/40 transition-all duration-500 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.2)] group cursor-pointer">
                 <img
                   src={currentCase.image}
                   alt={`Case study ${currentCase.salon}`}
-                  className="w-full h-auto"
+                  className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
@@ -122,13 +122,13 @@ const CaseStudies = () => {
                 {currentCase.stats.map((stat, index) => (
                   <div
                     key={index}
-                    className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4 text-center"
+                    className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3 sm:p-4 text-center hover:border-primary/50 transition-all duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_0_20px_hsl(328,100%,54%/0.2)] cursor-pointer group hover:from-white/15 hover:to-white/10"
                   >
-                    <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary mx-auto mb-2" />
-                    <div className="text-lg sm:text-2xl font-bold text-white mb-1">
+                    <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform duration-500 group-hover:drop-shadow-[0_0_8px_hsl(328,100%,54%)]" />
+                    <div className="text-lg sm:text-2xl font-bold text-white mb-1 group-hover:text-primary transition-colors duration-300">
                       {stat.value}
                     </div>
-                    <div className="text-[10px] sm:text-xs text-white/60 leading-tight">{stat.label}</div>
+                    <div className="text-[10px] sm:text-xs text-white/60 leading-tight group-hover:text-white/80 transition-colors duration-300">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -144,26 +144,26 @@ const CaseStudies = () => {
               </div>
 
               {/* Challenge */}
-              <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_20px_hsl(328,100%,54%/0.15)] hover:scale-[1.02] cursor-pointer group hover:from-white/10 hover:to-white/5">
                 <h4 className="text-primary font-semibold mb-2 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span className="w-2 h-2 bg-primary rounded-full group-hover:scale-125 transition-transform duration-300"></span>
                   Wyzwanie
                 </h4>
-                <p className="text-white/80">{currentCase.challenge}</p>
+                <p className="text-white/80 group-hover:text-white/90 transition-colors duration-300">{currentCase.challenge}</p>
               </div>
 
               {/* Solution */}
-              <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_20px_hsl(328,100%,54%/0.15)] hover:scale-[1.02] cursor-pointer group hover:from-white/10 hover:to-white/5">
                 <h4 className="text-primary font-semibold mb-2 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span className="w-2 h-2 bg-primary rounded-full group-hover:scale-125 transition-transform duration-300"></span>
                   Nasze rozwiązanie
                 </h4>
-                <p className="text-white/80">{currentCase.solution}</p>
+                <p className="text-white/80 group-hover:text-white/90 transition-colors duration-300">{currentCase.solution}</p>
               </div>
 
               {/* Results box */}
-              <div className="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
-                <h4 className="text-white font-semibold mb-3">Wyniki kampanii:</h4>
+              <div className="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.3)] hover:scale-[1.02] cursor-pointer group hover:from-primary/30 hover:to-primary/10">
+                <h4 className="text-white font-semibold mb-3 group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all duration-300">Wyniki kampanii:</h4>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <ChevronRight className="w-4 h-4 text-primary" />
@@ -184,11 +184,11 @@ const CaseStudies = () => {
               </div>
 
               {/* Testimonial */}
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 italic">
-                <p className="text-white/90 leading-relaxed">
+              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 italic hover:border-primary/40 transition-all duration-500 hover:shadow-[0_0_25px_hsl(328,100%,54%/0.2)] hover:scale-[1.02] cursor-pointer group hover:from-white/15 hover:to-white/10">
+                <p className="text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300">
                   "{currentCase.testimonial}"
                 </p>
-                <p className="text-primary font-semibold mt-4">
+                <p className="text-primary font-semibold mt-4 group-hover:drop-shadow-[0_0_8px_hsl(328,100%,54%)] transition-all duration-300">
                   – {currentCase.owner}
                 </p>
               </div>

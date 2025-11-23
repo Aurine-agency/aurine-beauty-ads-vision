@@ -52,12 +52,12 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-5 md:p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.2)] animate-fade-in-up w-full"
+              className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-5 md:p-6 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_hsl(328,100%,54%/0.3)] animate-fade-in-up w-full hover:scale-[1.02] hover:-translate-y-1 hover:from-white/10 hover:to-white/5 cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className="bg-primary/10 p-2 sm:p-2.5 rounded-xl group-hover:bg-primary/20 transition-colors flex-shrink-0">
-                  <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                <div className="bg-primary/10 p-2 sm:p-2.5 rounded-xl group-hover:bg-primary/30 transition-all duration-500 flex-shrink-0 group-hover:scale-110 group-hover:rotate-3">
+                  <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:drop-shadow-[0_0_8px_hsl(328,100%,54%)]" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2 sm:mb-3 group-hover:text-primary transition-colors">

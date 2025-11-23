@@ -12,17 +12,17 @@ const AboutUs = () => {
 
       <div className="container mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 md:mb-20 animate-fade-in px-4">
-          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 sm:px-6 py-2 mb-4 sm:mb-6">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20 animate-fade-in px-5 sm:px-4">
+          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 sm:px-6 py-2 mb-5 sm:mb-6">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-primary font-semibold text-sm sm:text-base">O Aurine</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 sm:mb-6 sm:leading-tight">
             Agencja dla salonów beauty
             <br />
             w <span className="text-gradient-pink">małych miastach</span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base leading-relaxed sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
             Wiemy, jak to jest prowadzić biznes poza dużym miastem. Pomagamy właścicielkom biznesów beauty przyciągnąć klientki z okolicy – szczerze, bez obietnic bez pokrycia.
           </p>
         </div>
@@ -34,11 +34,11 @@ const AboutUs = () => {
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
               <Target className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nasza misja</h3>
-            <p className="text-white/80 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
+            <h3 className="text-[1.25rem] leading-tight sm:text-2xl font-bold text-white mb-4 sm:mb-4">Nasza misja</h3>
+            <p className="text-white/80 leading-[1.6] mb-4 sm:mb-4 text-[0.9375rem] sm:text-base">
               Wierzymy, że każdy salon beauty – niezależnie od tego, czy jest w dużym mieście, czy w małej miejscowości – zasługuje na pełen terminarz.
             </p>
-            <p className="text-white/80 leading-relaxed text-sm sm:text-base">
+            <p className="text-white/80 leading-[1.6] text-[0.9375rem] sm:text-base">
               Skupiamy się na mniejszych miejscowościach, ponieważ wiemy, że tam reklamy online mogą zdziałać cuda. Lokalna konkurencja często nie prowadzi kampanii albo robi to nieskutecznie – a my pomagamy Ci to wykorzystać.
             </p>
           </div>
@@ -48,11 +48,11 @@ const AboutUs = () => {
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/30 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
               <Heart className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Jak pracujemy</h3>
-            <p className="text-white/80 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
+            <h3 className="text-[1.25rem] leading-tight sm:text-2xl font-bold text-white mb-4 sm:mb-4">Jak pracujemy</h3>
+            <p className="text-white/80 leading-[1.6] mb-4 sm:mb-4 text-[0.9375rem] sm:text-base">
               Wierzymy, że za każdą właścicielką salonu kryje się inna historia, inne marzenia i wyzwania. Dlatego nigdy nie stosujemy szablonów ani gotowych rozwiązań.
             </p>
-            <p className="text-white/80 leading-relaxed text-sm sm:text-base">
+            <p className="text-white/80 leading-[1.6] text-[0.9375rem] sm:text-base">
               Każdą współpracę zaczynamy od rozmowy – chcemy poznać Ciebie, Twój salon i to, co jest dla Ciebie ważne. Dopiero wtedy tworzymy kampanię szytą na miarę, idealnie dopasowaną do Twojej sytuacji.
             </p>
           </div>

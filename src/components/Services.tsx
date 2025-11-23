@@ -37,13 +37,13 @@ const Services = () => {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 blur-3xl rounded-full" />
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-5 sm:px-4">
+          <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-4">
             Co dla Ciebie
             <br className="sm:hidden" />
             <span className="text-gradient-pink"> zrobimy</span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-base leading-relaxed sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
             Zajmujemy się wszystkim, co potrzebne – Ty skupiasz się na tym, co robisz najlepiej
           </p>
         </div>
@@ -60,10 +60,10 @@ const Services = () => {
                   <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:drop-shadow-[0_0_8px_hsl(328,100%,54%)]" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2 sm:mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-[1.0625rem] leading-tight sm:text-lg md:text-xl font-semibold text-white mb-3 sm:mb-3 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-sm sm:text-base text-white/70 leading-relaxed">
+                  <p className="text-[0.9375rem] leading-[1.6] sm:text-base text-white/70">
                     {service.description}
                   </p>
                 </div>

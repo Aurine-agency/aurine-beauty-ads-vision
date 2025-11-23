@@ -20,18 +20,18 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(328,100%,54%/0.15),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(328,100%,70%/0.1),transparent_50%)]" />
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 relative z-10">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="container mx-auto px-5 sm:px-6 md:px-12 lg:px-24 relative z-10">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Text content */}
           <div className="text-left animate-fade-in-up lg:order-1">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-[2.5rem] leading-[1.15] sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 sm:leading-tight">
               Więcej klientek
               <br />
               do Twojego
               <br />
               <span className="text-gradient-pink glow-pink">salonu</span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/70 mb-8 max-w-xl">
+            <p className="text-[1.0625rem] leading-relaxed sm:text-xl text-white/70 mb-8 max-w-xl">
               Pomagamy właścicielkom biznesów beauty w małych miastach. Tworzymy kampanie reklamowe, które przyciągają prawdziwe klientki, bez pustych obietnic.
             </p>
           </div>

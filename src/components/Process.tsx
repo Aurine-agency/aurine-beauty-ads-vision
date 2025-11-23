@@ -43,11 +43,11 @@ const Process = () => {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-5 sm:px-4">
+          <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-4">
             Jak to <span className="text-gradient-pink">wygląda</span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-base leading-relaxed sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
             Prosty, przejrzysty proces – od pierwszej rozmowy do wymiernych efektów
           </p>
         </div>
@@ -79,8 +79,8 @@ const Process = () => {
 
                 {/* Content */}
                 <div className="flex-1 pt-1 sm:pt-2 min-w-0">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 sm:mb-3">{step.title}</h3>
-                  <p className="text-sm sm:text-base text-white/70 leading-relaxed">{step.description}</p>
+                  <h3 className="text-[1.125rem] leading-tight sm:text-2xl font-semibold text-white mb-3 sm:mb-3">{step.title}</h3>
+                  <p className="text-[0.9375rem] leading-[1.6] sm:text-base text-white/70">{step.description}</p>
                 </div>
               </div>
             </div>

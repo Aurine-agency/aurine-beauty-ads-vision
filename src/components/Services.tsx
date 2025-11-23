@@ -50,18 +50,20 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl p-5 sm:p-6 md:p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.2)] animate-fade-in-up"
+              className="group bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-5 md:p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(328,100%,54%/0.2)] animate-fade-in-up max-w-md w-full mx-auto"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className="bg-primary/10 p-2.5 sm:p-3 rounded-xl group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                <div className="bg-primary/10 p-2 sm:p-2.5 rounded-xl group-hover:bg-primary/20 transition-colors flex-shrink-0">
                   <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 sm:mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2 sm:mb-3 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-sm sm:text-base text-white/70 leading-relaxed">{service.description}</p>
+                  <p className="text-sm sm:text-base text-white/70 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             </div>

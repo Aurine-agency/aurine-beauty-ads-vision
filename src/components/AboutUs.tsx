@@ -27,7 +27,7 @@ const AboutUs = () => {
         {/* Story cards */}
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 px-4">
           {/* Mission card */}
-          <div className="bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-sm border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 hover:border-primary/30 transition-all duration-300 animate-fade-in-up group">
+          <div className="bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-sm border border-white/10 rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 hover:border-primary/30 transition-all duration-300 animate-fade-in-up group max-w-md w-full mx-auto">
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
               <Target className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
             </div>
@@ -41,7 +41,7 @@ const AboutUs = () => {
           </div>
 
           {/* Experience card */}
-          <div className="bg-gradient-to-br from-primary/10 via-primary/5 to-transparent backdrop-blur-sm border border-primary/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 hover:border-primary/40 transition-all duration-300 animate-fade-in-up group" style={{ animationDelay: "0.1s" }}>
+          <div className="bg-gradient-to-br from-primary/10 via-primary/5 to-transparent backdrop-blur-sm border border-primary/20 rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 hover:border-primary/40 transition-all duration-300 animate-fade-in-up group max-w-md w-full mx-auto" style={{ animationDelay: "0.1s" }}>
             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/30 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
               <Heart className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
             </div>
@@ -80,7 +80,7 @@ const AboutUs = () => {
                 className="text-center animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="bg-gradient-to-br from-white/5 to-transparent border border-white/10 rounded-xl sm:rounded-2xl p-5 sm:p-6 hover:border-primary/30 transition-all duration-300 flex flex-col">
+                <div className="bg-gradient-to-br from-white/5 to-transparent border border-white/10 rounded-xl sm:rounded-2xl p-5 sm:p-6 hover:border-primary/30 transition-all duration-300 flex flex-col max-w-xs mx-auto">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                     <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-primary rounded-full"></div>
                   </div>

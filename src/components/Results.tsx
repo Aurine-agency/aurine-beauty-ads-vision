@@ -50,15 +50,19 @@ const Results = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in-up"
+              className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-xl sm:rounded-2xl p-5 sm:p-6 text-center hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in-up max-w-xs w-full mx-auto"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full mb-3 sm:mb-4">
-                <stat.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-full mb-3 sm:mb-4">
+                <stat.icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
               </div>
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2 glow-pink">{stat.value}</div>
-              <div className="text-base sm:text-lg font-semibold text-white/90 mb-1">{stat.label}</div>
-              <div className="text-xs sm:text-sm text-white/60">{stat.description}</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 glow-pink">
+                {stat.value}
+              </div>
+              <div className="text-sm sm:text-base font-semibold text-white/90 mb-1">
+                {stat.label}
+              </div>
+              <div className="text-[11px] sm:text-xs text-white/60">{stat.description}</div>
             </div>
           ))}
         </div>

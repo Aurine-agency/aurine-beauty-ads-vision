@@ -52,11 +52,11 @@ const Process = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-0 sm:px-4">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative mb-8 sm:mb-12 last:mb-0 animate-fade-in-up"
+              className="relative mb-8 sm:mb-12 last:mb-0 animate-fade-in-up px-5 sm:px-0"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               {/* Connection line */}

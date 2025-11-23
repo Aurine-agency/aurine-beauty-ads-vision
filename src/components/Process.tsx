@@ -43,7 +43,7 @@ const Process = () => {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-5 sm:px-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-0 sm:px-4">
           <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-4">
             Jak to <span className="text-gradient-pink">wygląda</span>
           </h2>
@@ -56,7 +56,7 @@ const Process = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative mb-8 sm:mb-12 last:mb-0 animate-fade-in-up px-5 sm:px-0"
+              className="relative mb-8 sm:mb-12 last:mb-0 animate-fade-in-up px-0 sm:px-0"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               {/* Connection line */}

@@ -11,7 +11,7 @@ const Contact = () => {
 
       <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12 animate-fade-in px-5 sm:px-4">
+          <div className="text-center mb-12 animate-fade-in px-0 sm:px-4">
             <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-4">
               Porozmawiajmy o <span className="text-gradient-pink">Twoim salonie</span>
             </h2>

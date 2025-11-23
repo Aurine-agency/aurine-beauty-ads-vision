@@ -12,7 +12,7 @@ const AboutUs = () => {
 
       <div className="container mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 md:mb-20 animate-fade-in px-5 sm:px-4">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20 animate-fade-in px-0 sm:px-4">
           <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 sm:px-6 py-2 mb-5 sm:mb-6">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-primary font-semibold text-sm sm:text-base">O Aurine</span>

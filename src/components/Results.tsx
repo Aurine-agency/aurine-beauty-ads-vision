@@ -38,7 +38,7 @@ const Results = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-5 sm:px-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-0 sm:px-4">
           <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-4">
             Co możesz <span className="text-gradient-pink">zyskać</span>
           </h2>
@@ -70,7 +70,7 @@ const Results = () => {
         </div>
 
         {/* Benefits list */}
-        <div className="max-w-4xl mx-auto bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 animate-fade-in mx-5 sm:mx-auto">
+        <div className="max-w-4xl mx-auto bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 animate-fade-in mx-0 sm:mx-auto">
           <h3 className="text-[1.25rem] leading-tight sm:text-2xl md:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">
             Dlaczego warto z nami pracować?
           </h3>

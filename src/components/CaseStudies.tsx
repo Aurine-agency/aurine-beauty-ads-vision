@@ -78,7 +78,7 @@ const CaseStudies = () => {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 blur-3xl rounded-full" />
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-5 sm:px-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-0 sm:px-4">
           <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-4">
             Prawdziwe <span className="text-gradient-pink">historie</span>
           </h2>
@@ -88,7 +88,7 @@ const CaseStudies = () => {
         </div>
 
         {/* Case study selector */}
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 px-5 sm:px-4">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 px-0 sm:px-4">
           {caseStudies.map((study, index) => (
             <button
               key={index}
@@ -105,7 +105,7 @@ const CaseStudies = () => {
         </div>
 
         {/* Case study content */}
-        <div className="max-w-6xl mx-auto px-5 sm:px-4">
+        <div className="max-w-6xl mx-auto px-0 sm:px-4">
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-start">
             {/* Left column - Image and stats */}
             <div className="space-y-6 animate-fade-in">

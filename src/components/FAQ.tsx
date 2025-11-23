@@ -45,7 +45,7 @@ const FAQ = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 blur-3xl rounded-full" />
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-5 sm:px-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in px-0 sm:px-4">
           <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-4">
             Najczęstsze <span className="text-gradient-pink">pytania</span>
           </h2>
@@ -54,7 +54,7 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4 px-5 sm:px-4">
+        <div className="max-w-3xl mx-auto space-y-4 px-0 sm:px-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -83,7 +83,7 @@ const FAQ = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center px-5 sm:px-4">
+        <div className="mt-12 text-center px-0 sm:px-4">
           <p className="text-white/60 mb-4 text-sm sm:text-base">Masz inne pytanie?</p>
           <button
             onClick={() => {

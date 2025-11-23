@@ -1,4 +1,4 @@
-import analyticsVisual from "@/assets/analytics-visual.png";
+import analyticsVisual from "@/assets/analytics-dashboard.png";
 
 const Hero = () => {
   const scrollToContact = () => {

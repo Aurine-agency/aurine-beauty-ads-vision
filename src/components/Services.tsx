@@ -1,6 +1,8 @@
 import { Target, TrendingUp, Users, Sparkles } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Services = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const services = [
     {
       icon: Target,
@@ -29,7 +31,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-black relative overflow-hidden">
+    <section ref={ref} id="services" className={`section-padding bg-black relative overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background accents */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-3xl rounded-full" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 blur-3xl rounded-full" />

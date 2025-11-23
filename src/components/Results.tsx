@@ -1,7 +1,9 @@
 import { ArrowUpRight, Users2, DollarSign, TrendingUp } from "lucide-react";
 import beautyIcons from "@/assets/beauty-icons.png";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Results = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const stats = [
     {
       icon: Users2,
@@ -24,7 +26,7 @@ const Results = () => {
   ];
 
   return (
-    <section id="results" className="section-padding bg-black relative overflow-hidden">
+    <section ref={ref} id="results" className={`section-padding bg-black relative overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background visual */}
       <div className="absolute inset-0 opacity-20">
         <img

@@ -1,6 +1,8 @@
 import { MessageSquare, LineChart, Palette, Rocket } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Process = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const steps = [
     {
       icon: MessageSquare,
@@ -33,7 +35,7 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="section-padding bg-[#0a0a0a] relative overflow-hidden">
+    <section ref={ref} id="process" className={`section-padding bg-[#0a0a0a] relative overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 w-1 h-1/2 bg-gradient-to-b from-transparent via-primary/30 to-transparent" />

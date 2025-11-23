@@ -3,9 +3,11 @@ import { TrendingUp, Users, DollarSign, ChevronRight } from "lucide-react";
 import caseChart1 from "@/assets/case-study-chart-1.png";
 import caseChart2 from "@/assets/case-study-chart-2.png";
 import beforeAfter from "@/assets/case-study-before-after.png";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const CaseStudies = () => {
   const [activeCase, setActiveCase] = useState(0);
+  const { ref, isVisible } = useScrollAnimation();
 
   const caseStudies = [
     {
@@ -70,7 +72,7 @@ const CaseStudies = () => {
   const currentCase = caseStudies[activeCase];
 
   return (
-    <section id="case-studies" className="section-padding bg-[#0a0a0a] relative overflow-hidden">
+    <section ref={ref} id="case-studies" className={`section-padding bg-[#0a0a0a] relative overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background decoration */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 blur-3xl rounded-full" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 blur-3xl rounded-full" />

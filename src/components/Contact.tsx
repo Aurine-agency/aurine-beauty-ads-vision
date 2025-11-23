@@ -1,8 +1,11 @@
 import { Mail, Phone, MessageCircle } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Contact = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="contact" className="section-padding bg-[#0a0a0a] relative overflow-hidden">
+    <section ref={ref} id="contact" className={`section-padding bg-[#0a0a0a] relative overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 blur-3xl rounded-full" />
 

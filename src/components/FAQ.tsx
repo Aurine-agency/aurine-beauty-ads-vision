@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const { ref, isVisible } = useScrollAnimation();
 
   const faqs = [
     {
@@ -38,7 +40,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="section-padding bg-[#0a0a0a] relative overflow-hidden">
+    <section ref={ref} id="faq" className={`section-padding bg-[#0a0a0a] relative overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 blur-3xl rounded-full" />
 

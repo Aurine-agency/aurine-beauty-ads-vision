@@ -1,6 +1,8 @@
 import analyticsVisual from "@/assets/analytics-dashboard.png";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Hero = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     element?.scrollIntoView({ behavior: "smooth" });
@@ -8,8 +10,11 @@ const Hero = () => {
 
   return (
     <section
+      ref={ref}
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-black via-black to-[#0a0a0a] pt-24 sm:pt-28 md:pt-32"
+      className={`relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-black via-black to-[#0a0a0a] pt-24 sm:pt-28 md:pt-32 transition-all duration-1000 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
     >
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(328,100%,54%/0.15),transparent_50%)]" />

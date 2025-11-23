@@ -1,8 +1,11 @@
 import { Heart, Target, Sparkles } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const AboutUs = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="about" className="section-padding bg-gradient-to-b from-black via-[#0a0a0a] to-black relative overflow-hidden">
+    <section ref={ref} id="about" className={`section-padding bg-gradient-to-b from-black via-[#0a0a0a] to-black relative overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Animated background elements */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 blur-3xl rounded-full animate-pulse" />
       <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-primary/5 blur-3xl rounded-full animate-pulse" style={{ animationDelay: "1s" }} />

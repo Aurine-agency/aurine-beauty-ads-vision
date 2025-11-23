@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { ref, isVisible } = useScrollAnimation();
 
   const testimonials = [
     {
@@ -51,7 +53,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section id="testimonials" className="section-padding bg-black relative overflow-hidden">
+    <section ref={ref} id="testimonials" className={`section-padding bg-black relative overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 blur-3xl rounded-full" />
 

@@ -66,7 +66,7 @@ const Testimonials = () => {
         </div>
 
         {/* Carousel */}
-        <div className="max-w-4xl mx-auto relative px-4">
+        <div className="max-w-4xl mx-auto relative px-0 sm:px-4">
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-out"
@@ -75,9 +75,9 @@ const Testimonials = () => {
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="w-full flex-shrink-0 px-2 sm:px-4 flex justify-center"
+                  className="w-full flex-shrink-0 px-0 sm:px-4 flex justify-center"
                 >
-                  <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-xl sm:rounded-2xl p-5 sm:p-7 md:p-10 w-full">
+                  <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-none sm:rounded-2xl p-4 sm:p-6 md:p-8 w-full">
                     {/* Stars */}
                     <div className="flex gap-1 mb-3 sm:mb-4 justify-center">
                       {[...Array(testimonial.rating)].map((_, i) => (

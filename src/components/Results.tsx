@@ -46,7 +46,7 @@ const Results = () => {
         </div>
 
         {/* Stats grid */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 max-w-6xl mx-auto px-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 max-w-6xl mx-auto px-0 sm:px-4">
           {stats.map((stat, index) => (
             <div
               key={index}

@@ -3,11 +3,6 @@ import aurineLogoImage from "@/assets/aurine-logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <footer className="bg-black border-t border-white/10">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 py-12">
@@ -53,12 +48,12 @@ const Footer = () => {
                 { label: "FAQ", id: "faq" },
               ].map((link) => (
                 <li key={link.id}>
-                  <button
-                    onClick={() => scrollToSection(link.id)}
+                  <Link
+                    to={`/#${link.id}`}
                     className="text-white/60 hover:text-primary transition-colors"
                   >
                     {link.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
               <li>

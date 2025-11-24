@@ -1,15 +1,28 @@
 import { ArrowLeft, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const JakProwadzicProfil = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-black">
       <Navigation />
       
       <article className="pt-24 sm:pt-28 md:pt-32 pb-20">
         <div className="container mx-auto px-6 max-w-4xl">
+          <Breadcrumbs 
+            items={[
+              { label: "Porady", href: "/porady" },
+              { label: "Jak prowadzić profil salonu na Facebooku", href: "/porady/jak-prowadzic-profil-salonu" }
+            ]}
+          />
+
           <Link
             to="/porady"
             className="inline-flex items-center gap-2 text-white/60 hover:text-primary transition-colors mb-8"

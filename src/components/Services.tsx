@@ -8,25 +8,25 @@ const Services = () => {
       icon: Target,
       title: "Precyzyjne targetowanie",
       description:
-        "Twoje reklamy docierają do kobiet z Twojego regionu, które aktywnie szukają usług beauty. Ustawiamy parametry tak, aby każda złotówka trafiała do właściwej osoby – nie marnujemy Twojego budżetu.",
+        "Reklamy kierujemy do kobiet z Twojego regionu, które mogą być zainteresowane usługami beauty. Parametry ustawiamy tak, żeby dotrzeć do właściwych osób i efektywnie wykorzystać budżet.",
     },
     {
       icon: TrendingUp,
       title: "Optymalizacja kampanii",
       description:
-        "Codziennie analizujemy wyniki i dostosowujemy strategię. Testujemy różne podejścia i skalujemy to, co działa najlepiej – dzięki temu obniżamy koszty i zwiększamy efekty.",
+        "Regularnie analizujemy wyniki i wprowadzamy usprawnienia. Testujemy różne podejścia, sprawdzamy co działa i dostosowujemy strategię, żeby kampanie były coraz skuteczniejsze.",
     },
     {
       icon: Sparkles,
       title: "Profesjonalne kreacje",
       description:
-        "Tworzymy reklamy, które zatrzymują wzrok. Estetyczne grafiki i teksty pisane językiem korzyści, które przekonują do umówienia wizyty właśnie w Twoim salonie.",
+        "Projektujemy grafiki i piszemy teksty reklamowe dopasowane do charakteru Twojego salonu. Dbamy o to, żeby reklamy wyglądały estetycznie i przekazywały właściwy komunikat.",
     },
     {
       icon: Users,
       title: "Przejrzyste raportowanie",
       description:
-        "Co tydzień otrzymujesz zrozumiały raport pokazujący najważniejsze dane – wyświetlenia, kliknięcia, zapytania i koszt pozyskania klientki. Zawsze wiesz, jak przebiega kampania.",
+        "Regularnie otrzymujesz raport z najważniejszymi danymi – wyświetleniami, kliknięciami, zapytaniami i kosztami. Wszystko przekazujemy w przystępnej formie, żeby jasno widzieć przebieg kampanii.",
     },
   ];
 
@@ -44,7 +44,7 @@ const Services = () => {
             <span className="text-gradient-pink"> zrobimy</span>
           </h2>
           <p className="text-base leading-relaxed sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Zajmujemy się wszystkim, co potrzebne – Ty skupiasz się na tym, co robisz najlepiej
+            Kompleksowa obsługa kampanii – od strategii po optymalizację
           </p>
         </div>
 

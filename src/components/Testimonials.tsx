@@ -10,31 +10,31 @@ const Testimonials = () => {
     {
       name: "Katarzyna Nowak",
       business: "Studio Urody - Mława",
-      text: "Współpraca z Aurine to była najlepsza decyzja. Pierwszy miesiąc przyniósł 18 nowych klientek przez Facebook. Teraz mój kalendarz jest pełny, a ja mogę skupić się na tym, co kocham. Zespół zawsze jest dostępny i wszystko tłumaczy prostym językiem.",
+      text: "Współpraca z Aurine znacząco pomogła w rozwoju mojego salonu. Pierwszy miesiąc przyniósł 18 nowych klientek przez Facebook. Zespół jest dostępny i tłumaczy wszystko w zrozumiały sposób, co bardzo sobie cenię.",
       rating: 5,
     },
     {
       name: "Magdalena Kowalska",
       business: "Gabinet Kosmetyczny - Ostrów Mazowiecka",
-      text: "Miałam wątpliwości, czy reklamy na Facebooku sprawdzą się w małym mieście. Po trzech miesiącach współpracy to była najlepsza inwestycja w biznes. Telefon nie przestaje dzwonić, a większość nowych klientek zostaje na stałe.",
+      text: "Miałam wątpliwości, czy reklamy na Facebooku sprawdzą się w małym mieście. Po kilku miesiącach współpracy widzę wyraźną różnicę – więcej zapytań, telefon dzwoni częściej, a część nowych osób wraca regularnie.",
       rating: 5,
     },
     {
       name: "Anna Wiśniewska",
       business: "Salon Beauty - Płońsk",
-      text: "Mogę skupić się na tym, co robię najlepiej – pracy z klientkami. Aurine zajmuje się wszystkim: reklamami, grafikami, tekstami. Regularnie dostaję raporty i wiem dokładnie, za co płacę.",
+      text: "Doceniam, że mogę skupić się na pracy w salonie, a Aurine zajmuje się reklamami, grafikami i tekstami. Regularnie otrzymuję raporty i widzę, jak przebiega kampania – to bardzo wygodna forma współpracy.",
       rating: 5,
     },
     {
       name: "Joanna Lewandowska",
       business: "Salon Piękności - Ciechanów",
-      text: "Kampanie przyniosły nie tylko nowe klientki, ale pomogły zbudować rozpoznawalność salonu w okolicy. Po pół roku współpracy mogę powiedzieć, że to najlepsza decyzja biznesowa, jaką podjęłam.",
+      text: "Kampanie pomogły w budowaniu rozpoznawalności salonu w okolicy. Po pół roku współpracy widzę wyraźne efekty – więcej osób zna salon, a telefon dzwoni regularnie.",
       rating: 5,
     },
     {
       name: "Monika Zielińska",
       business: "Gabinet Kosmetologii - Przasnysz",
-      text: "Aurine rozumie potrzeby małych salonów. Nie wciskają drogich pakietów, tylko dostosowują się do budżetu. Efekty przeszły oczekiwania – salon jest pełny, a ja planuję zatrudnić drugą osobę.",
+      text: "Aurine dostosowało ofertę do moich możliwości i potrzeb. To wygodna współpraca – wszystko jest jasno omówione, a efekty są widoczne. Salon ma więcej klientek i myślę o rozbudowie zespołu.",
       rating: 5,
     },
   ];

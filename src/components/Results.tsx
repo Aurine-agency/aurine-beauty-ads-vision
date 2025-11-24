@@ -40,10 +40,10 @@ const Results = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in px-0 sm:px-4">
           <h2 className="text-[2rem] leading-[1.2] sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-4">
-            Co możesz <span className="text-gradient-pink">zyskać</span>
+            Nasze <span className="text-gradient-pink">doświadczenie</span>
           </h2>
           <p className="text-base leading-relaxed sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Konkretne rezultaty, które zobaczysz w swoim salonie
+            Średnie rezultaty z kampanii, które prowadzimy
           </p>
         </div>
 
@@ -72,16 +72,16 @@ const Results = () => {
         {/* Benefits list */}
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 animate-fade-in mx-0 sm:mx-auto">
           <h3 className="text-[1.25rem] leading-tight sm:text-2xl md:text-3xl font-bold text-white mb-6 sm:mb-8 text-center">
-            Dlaczego warto z nami pracować?
+            Jak pracujemy?
           </h3>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {[
-              "Specjalizacja wyłącznie w branży beauty – rozumiemy specyfikę tego rynku",
-              "Pełna transparentność – zawsze wiesz, za co płacisz i jakie są efekty",
-              "Rozliczenia miesięczne, bez długoterminowych zobowiązań",
-              "Jesteśmy dostępni – odpowiadamy na pytania i służymy wsparciem",
-              "Efektywne wykorzystanie budżetu – dbamy o każdą złotówkę",
-              "Pomoc w przygotowaniu materiałów – zdjęcia, teksty, grafiki",
+              "Specjalizujemy się w branży beauty – rozumiemy specyfikę tego rynku",
+              "Transparentne rozliczenia – wiesz, za co płacisz i jakie są wyniki",
+              "Rozliczenia miesięczne bez długoterminowych umów",
+              "Dostępność – możesz do nas pisać, jeśli masz pytania",
+              "Rozważne gospodarowanie budżetem reklamowym",
+              "Pomoc przy materiałach – grafiki, teksty, konsultacje",
             ].map((benefit, index) => (
               <div
                 key={index}

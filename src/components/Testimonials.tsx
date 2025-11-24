@@ -9,25 +9,25 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Wioletta S.",
-      business: "Salon kosmetyczny - Ciechanów",
+      business: "Salon kosmetyczny - Przasnysz",
       text: "Z całego serca polecamy Agencję Aurine! Znakomita obsługa klienta i pełen profesjonalizm nawet w przypadku tych najmniejszych firm. Świetna współpraca, wszystko wytłumaczone krok po kroku, pierwsze efekty były po kilku dniach.",
       rating: 5,
     },
     {
       name: "Zuzanna W.",
-      business: "Salon fryzjerski - Mława",
+      business: "Salon fryzjerski - Nasielsk",
       text: "Bardzo polecam Agencję Aurine, a zwłaszcza specjalistę Pana Przemka. Świetne podejście i wiedza dają szybkie efekty ;).",
       rating: 5,
     },
     {
       name: "Magdalena W.",
-      business: "Gabinet kosmetyczny - Płońsk",
+      business: "Gabinet kosmetyczny - Pułtusk",
       text: "Serdecznie polecam. Pan Przemek ma super podejście, nawet trudne rzeczy wyjaśniał w prosty sposób.",
       rating: 5,
     },
     {
       name: "Aleksandra S.",
-      business: "Studio urody - Ostrów Mazowiecka",
+      business: "Studio urody - Serock",
       text: "Profesjonalna obsługa i widoczne rezultaty. Polecam współpracę z Aurine każdej właścicielce salonu, która chce rozwijać swój biznes.",
       rating: 5,
     },

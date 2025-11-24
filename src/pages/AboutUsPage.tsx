@@ -5,8 +5,8 @@ const AboutUsPage = () => {
   const values = [
     {
       icon: Heart,
-      title: "Pasja do beauty",
-      description: "Kochamy branżę beauty i rozumiemy jej specyfikę. Wiemy, jak ważna jest atmosfera, estetyka i relacje z klientkami.",
+      title: "Specjalizacja w beauty",
+      description: "Rozumiemy branżę beauty i jej specyfikę. Wiemy, jak ważna jest atmosfera, estetyka i relacje z klientkami.",
     },
     {
       icon: Target,

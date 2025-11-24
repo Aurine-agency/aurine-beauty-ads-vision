@@ -10,17 +10,17 @@ const FAQ = () => {
     {
       question: "Ile to kosztuje?",
       answer:
-        "Do każdej współpracy podchodzimy indywidualnie. Koszt zależy od Twojego budżetu reklamowego i celów, które chcesz osiągnąć. Nie mamy sztywnych pakietów – dostosowujemy się do możliwości każdego salonu. Najlepiej po prostu porozmawiać – wtedy wszystko stanie się jasne.",
+        "Każdą współpracę ustalamy indywidualnie. Koszt zależy od budżetu reklamowego i zakresu prac. Nie mamy sztywnych pakietów – dostosowujemy ofertę do możliwości konkretnego salonu. Zachęcam do rozmowy, wtedy wszystko omówimy szczegółowo.",
     },
     {
       question: "Jak długo trzeba czekać na efekty?",
       answer:
-        "Pierwsze zapytania od zainteresowanych klientek przychodzą zwykle już w pierwszym tygodniu. Pełny obraz sytuacji masz po około miesiącu – wtedy widać wyraźnie, co działa najlepiej i możemy dalej optymalizować kampanię.",
+        "Pierwsze zapytania zazwyczaj przychodzą już w pierwszym tygodniu. Pełny obraz efektów kampanii widać po około miesiącu – wtedy można ocenić, co działa najlepiej i wprowadzać usprawnienia.",
     },
     {
       question: "Czy to działa w małych miastach?",
       answer:
-        "Tak, bardzo dobrze! Facebook pozwala nam precyzyjnie dotrzeć do osób z Twojego miasta i okolic. W mniejszych miejscowościach często łatwiej osiągnąć sukces, ponieważ lokalna konkurencja rzadko prowadzi profesjonalne kampanie reklamowe.",
+        "Tak, reklamy na Facebooku sprawdzają się również w małych miastach. Facebook pozwala precyzyjnie targetować osoby z konkretnego regionu. W mniejszych miejscowościach często jest mniejsza konkurencja reklamowa, co może być dodatkowym atutem.",
     },
     {
       question: "Czy muszę dać dostęp do mojego Facebooka?",
@@ -30,12 +30,12 @@ const FAQ = () => {
     {
       question: "Co jeśli nie będę zadowolona?",
       answer:
-        "Rozliczamy się miesięcznie, bez długoterminowych zobowiązań. Jeśli cokolwiek Ci nie odpowiada, możemy zakończyć współpracę. Zazwyczaj jednak po pierwszym miesiącu właścicielki zostają z nami na dłużej :)",
+        "Rozliczamy się miesięcznie, bez długoterminowych zobowiązań. Jeśli współpraca Ci nie odpowiada, możemy ją zakończyć. Większość właścicielek zostaje z nami na dłużej, ale zawsze można podjąć inną decyzję.",
     },
     {
       question: "Czy potrzebuję profesjonalnych zdjęć?",
       answer:
-        "Chętnie pomożemy Ci w tym zakresie! Możemy wykorzystać zdjęcia, które już masz, lub podpowiemy jak wykonać dobre zdjęcia samodzielnie. W razie potrzeby pomożemy znaleźć fotografa w Twojej okolicy.",
+        "Niekoniecznie. Możemy wykorzystać zdjęcia, które już masz, lub pomożemy Ci wykonać dobre zdjęcia samodzielnie. W razie potrzeby podpowiemy też, jak znaleźć fotografa w Twojej okolicy.",
     },
   ];
 

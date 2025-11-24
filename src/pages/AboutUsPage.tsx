@@ -2,24 +2,6 @@ import { ArrowLeft, Target, Heart, Lightbulb, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const AboutUsPage = () => {
-  const team = [
-    {
-      name: "Anna Kowalska",
-      role: "Strategia kampanii",
-      description: "Specjalistka z 5-letnim doświadczeniem w marketingu digital. Odpowiada za planowanie i optymalizację kampanii reklamowych.",
-    },
-    {
-      name: "Marta Nowak",
-      role: "Kreacje reklamowe",
-      description: "Grafik i copywriter z pasją do branży beauty. Tworzy estetyczne reklamy, które zatrzymują wzrok i angażują.",
-    },
-    {
-      name: "Piotr Wiśniewski",
-      role: "Analityka i optymalizacja",
-      description: "Analityk danych z doświadczeniem w e-commerce. Monitoruje wyniki i wprowadza usprawnienia dla maksymalnej efektywności.",
-    },
-  ];
-
   const values = [
     {
       icon: Heart,
@@ -71,14 +53,13 @@ const AboutUsPage = () => {
               w swojej branży, ale prowadzenie kampanii reklamowych to zupełnie inna dziedzina.
             </p>
             <p>
-              Rozpoczęliśmy działalność w 2019 roku, pomagając pierwszemu salonowi kosmetycznemu w Mławie. 
-              Po kilku miesiącach współpracy właścicielka salonu zauważyła znaczący wzrost liczby nowych klientek. 
-              To był moment, w którym zrozumieliśmy, że możemy realnie wpłynąć na rozwój lokalnych biznesów beauty.
+              Pomagamy salonom kosmetycznym dotrzeć do nowych klientek poprzez profesjonalne kampanie reklamowe. 
+              Specjalizujemy się w pracy z małymi miastami, gdzie rozumiemy lokalny rynek i wiemy, 
+              jak skutecznie wykorzystać budżet reklamowy.
             </p>
             <p>
-              Dziś współpracujemy z salonami w całej Polsce, specjalizując się przede wszystkim w małych miastach. 
-              Wiemy, jak prowadzić kampanie w mniejszych społecznościach, jak dotrzeć do właściwych osób 
-              i jak efektywnie wykorzystać budżet reklamowy.
+              Współpracujemy z salonami w całej Polsce, tworząc kampanie dopasowane do specyfiki 
+              mniejszych społeczności i charakteru każdego salonu.
             </p>
           </div>
         </section>
@@ -112,30 +93,6 @@ const AboutUsPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{value.title}</h3>
                 <p className="text-white/70 leading-relaxed">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Zespół */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold text-white mb-6">Poznaj nasz zespół</h2>
-          <p className="text-lg text-white/70 mb-12 max-w-3xl">
-            Jesteśmy grupą specjalistów z różnych obszarów marketingu, połączonych pasją 
-            do branży beauty i chęcią pomocy lokalnym biznesom.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:border-primary/30 transition-all hover:scale-105"
-              >
-                <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-12 h-12 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-                <p className="text-primary text-sm font-medium mb-3">{member.role}</p>
-                <p className="text-white/70 text-sm leading-relaxed">{member.description}</p>
               </div>
             ))}
           </div>
